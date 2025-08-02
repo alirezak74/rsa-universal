@@ -1,0 +1,26 @@
+[Unit]
+Description=RSA Core Emergency Response Service
+Documentation=https://github.com/rsacrypto/rsa-core
+DefaultDependencies=no
+
+[Service]
+Type=oneshot
+ExecStart=/opt/rsa-core/bin/emergency_rollback.sh auto
+User=root
+Group=root
+TimeoutStartSec=30
+RemainAfterExit=no
+
+# Emergency privileges - needed for system recovery
+PrivateTmp=no
+ProtectSystem=no
+ProtectHome=no
+NoNewPrivileges=no
+
+# Logging
+StandardOutput=journal+console
+StandardError=journal+console
+SyslogIdentifier=rsa-emergency
+
+[Install]
+WantedBy=multi-user.target
