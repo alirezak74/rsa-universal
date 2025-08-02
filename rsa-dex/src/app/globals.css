@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Order book styles */
+.order-book-row {
+  @apply flex justify-between items-center py-1 px-2 text-sm hover:bg-gray-50 dark:hover:bg-gray-800 cursor-pointer;
+}
+
+.bid-row {
+  @apply bg-green-50 dark:bg-green-900/20;
+}
+
+.ask-row {
+  @apply bg-red-50 dark:bg-red-900/20;
+}
+
+/* Trading pair styles */
+.trading-pair {
+  @apply flex items-center space-x-2 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer transition-colors;
+}
+
+.trading-pair.active {
+  @apply bg-blue-100 dark:bg-blue-900/30 border-blue-500;
+}
+
+/* Price change indicator */
+.price-up {
+  @apply text-green-600 dark:text-green-400;
+}
+
+.price-down {
+  @apply text-red-600 dark:text-red-400;
+}
+
+/* Chart container */
+.chart-container {
+  @apply w-full h-96 bg-white dark:bg-gray-900 rounded-lg border border-gray-200 dark:border-gray-700;
+}
+
+/* Order form styles */
+.order-form {
+  @apply space-y-4 p-4 bg-white dark:bg-gray-900 rounded-lg border border-gray-200 dark:border-gray-700;
+}
+
+.order-input {
+  @apply w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+}
+
+/* Fix for input text visibility - ensure text is always visible */
+input[type="number"],
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  color: #000000 !important;
+  background-color: #ffffff !important;
+}
+
+input[type="number"]::placeholder,
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color: #9ca3af !important;
+}
+
+/* Ensure focus states don't override text color */
+input[type="number"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  color: #000000 !important;
+  background-color: #ffffff !important;
+}
+
+.order-button {
+  @apply w-full py-2 px-4 rounded-md font-medium transition-colors;
+}
+
+.buy-button {
+  @apply bg-green-600 hover:bg-green-700 text-white;
+}
+
+.sell-button {
+  @apply bg-red-600 hover:bg-red-700 text-white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .chart-container {
+    @apply h-64;
+  }
+} 
