@@ -1,0 +1,69 @@
+version: '3.8'
+services:
+  db:
+    image: postgres:14
+    environment:
+      POSTGRES_USER: rsachain
+      POSTGRES_PASSWORD: changeme
+      POSTGRES_DB: rsachain
+    ports:
+      - '5432:5432'
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  core:
+    build: ./rsa-core
+    command: ./rsa-core --conf rsa.cfg
+    depends_on:
+      - db
+    volumes:
+      - ./rsa-core:/app
+    working_dir: /app
+
+  horizon:
+    build: ./rsa-horizon
+    command: go run ./main.go
+    depends_on:
+      - db
+      - core
+    environment:
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DB_USER=rsachain
+      - DB_PASS=changeme
+      - DB_NAME=rsachain
+    volumes:
+      - ./rsa-horizon:/app
+    working_dir: /app
+
+  wallet:
+    build: ./rsa-wallet-web
+    command: npm start
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./rsa-wallet-web:/app
+    working_dir: /app
+
+  explorer:
+    build: ./rsa-explorer
+    command: npm start
+    ports:
+      - '4000:4000'
+    volumes:
+      - ./rsa-explorer:/app
+    working_dir: /app
+
+  faucet:
+    build: ./rsa-faucet
+    command: node index.js
+    ports:
+      - '5000:5000'
+    depends_on:
+      - db
+    volumes:
+      - ./rsa-faucet:/app
+    working_dir: /app
+
+volumes:
+  pgdata: 
