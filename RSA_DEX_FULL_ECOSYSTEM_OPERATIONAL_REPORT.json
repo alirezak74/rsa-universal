@@ -1,0 +1,633 @@
+{
+  "timestamp": "2025-08-01T13:17:39.385Z",
+  "overallSuccessRate": 45.16,
+  "operationalStatus": "CRITICAL ISSUES",
+  "failedTests": [
+    {
+      "category": "backend",
+      "test": "Auth /api/auth/register",
+      "details": "Request failed with status code 404"
+    },
+    {
+      "category": "backend",
+      "test": "Auth /api/auth/wallet-connect",
+      "details": "Request failed with status code 404"
+    },
+    {
+      "category": "backend",
+      "test": "Trading /api/orders",
+      "details": "Request failed with status code 404"
+    },
+    {
+      "category": "backend",
+      "test": "Trading /api/orderbook/BTC_USDT",
+      "details": "Request failed with status code 404"
+    },
+    {
+      "category": "backend",
+      "test": "Trading /api/trades/BTC_USDT",
+      "details": "Request failed with status code 404"
+    },
+    {
+      "category": "backend",
+      "test": "Import /api/assets/import-token",
+      "details": "Request failed with status code 404"
+    },
+    {
+      "category": "backend",
+      "test": "Import /api/dex/create-pair",
+      "details": "Request failed with status code 404"
+    },
+    {
+      "category": "backend",
+      "test": "Admin /api/admin/hot-wallet/dashboard",
+      "details": "Request failed with status code 404"
+    },
+    {
+      "category": "backend",
+      "test": "Admin /api/admin/wrapped-tokens/dashboard",
+      "details": "Request failed with status code 404"
+    },
+    {
+      "category": "backend",
+      "test": "CrossChain /api/deposits/generate-address",
+      "details": "Request failed with status code 404"
+    },
+    {
+      "category": "backend",
+      "test": "Wallet /api/admin/wallets/transfer",
+      "details": "Request failed with status code 404"
+    },
+    {
+      "category": "frontend",
+      "test": "Frontend Health Check",
+      "details": ""
+    },
+    {
+      "category": "frontend",
+      "test": "Markets API Integration",
+      "details": ""
+    },
+    {
+      "category": "frontend",
+      "test": "Tokens API Integration",
+      "details": ""
+    },
+    {
+      "category": "admin",
+      "test": "Admin Panel Health Check",
+      "details": ""
+    },
+    {
+      "category": "admin",
+      "test": "Hot Wallet Management",
+      "details": "Request failed with status code 404"
+    },
+    {
+      "category": "admin",
+      "test": "Wrapped Tokens Management",
+      "details": "Request failed with status code 404"
+    },
+    {
+      "category": "synchronization",
+      "test": "Assets Sync to DEX",
+      "details": "Error: Request failed with status code 400, Status: 400"
+    },
+    {
+      "category": "synchronization",
+      "test": "Token Creation for Sync",
+      "details": "Request failed with status code 404"
+    },
+    {
+      "category": "integration",
+      "test": "Trading Pair Creation",
+      "details": "Request failed with status code 404"
+    },
+    {
+      "category": "integration",
+      "test": "Universal Import",
+      "details": "Request failed with status code 404"
+    },
+    {
+      "category": "integration",
+      "test": "BITCOIN Network",
+      "details": "Request failed with status code 404"
+    },
+    {
+      "category": "integration",
+      "test": "ETHEREUM Network",
+      "details": "Request failed with status code 404"
+    },
+    {
+      "category": "integration",
+      "test": "BSC Network",
+      "details": "Request failed with status code 404"
+    },
+    {
+      "category": "integration",
+      "test": "AVALANCHE Network",
+      "details": "Request failed with status code 404"
+    },
+    {
+      "category": "integration",
+      "test": "POLYGON Network",
+      "details": "Request failed with status code 404"
+    },
+    {
+      "category": "integration",
+      "test": "ARBITRUM Network",
+      "details": "Request failed with status code 404"
+    },
+    {
+      "category": "integration",
+      "test": "FANTOM Network",
+      "details": "Request failed with status code 404"
+    },
+    {
+      "category": "integration",
+      "test": "LINEA Network",
+      "details": "Request failed with status code 404"
+    },
+    {
+      "category": "integration",
+      "test": "SOLANA Network",
+      "details": "Request failed with status code 404"
+    },
+    {
+      "category": "integration",
+      "test": "UNICHAIN Network",
+      "details": "Request failed with status code 404"
+    },
+    {
+      "category": "integration",
+      "test": "OPBNB Network",
+      "details": "Request failed with status code 404"
+    },
+    {
+      "category": "integration",
+      "test": "BASE Network",
+      "details": "Request failed with status code 404"
+    },
+    {
+      "category": "integration",
+      "test": "POLYGON-ZKEVM Network",
+      "details": "Request failed with status code 404"
+    }
+  ],
+  "detailedResults": {
+    "backend": {
+      "passed": 17,
+      "failed": 11,
+      "total": 28,
+      "details": [
+        {
+          "test": "Auth /api/auth/login",
+          "status": "passed",
+          "details": "Status: 200",
+          "timestamp": "2025-08-01T13:17:39.250Z"
+        },
+        {
+          "test": "Auth /api/auth/register",
+          "status": "failed",
+          "details": "Request failed with status code 404",
+          "timestamp": "2025-08-01T13:17:39.254Z"
+        },
+        {
+          "test": "Auth /api/auth/wallet-connect",
+          "status": "failed",
+          "details": "Request failed with status code 404",
+          "timestamp": "2025-08-01T13:17:39.257Z"
+        },
+        {
+          "test": "Trading /api/markets",
+          "status": "passed",
+          "details": "Status: 200",
+          "timestamp": "2025-08-01T13:17:39.259Z"
+        },
+        {
+          "test": "Trading /api/pairs",
+          "status": "passed",
+          "details": "Status: 200",
+          "timestamp": "2025-08-01T13:17:39.262Z"
+        },
+        {
+          "test": "Trading /api/tokens",
+          "status": "passed",
+          "details": "Status: 200",
+          "timestamp": "2025-08-01T13:17:39.266Z"
+        },
+        {
+          "test": "Trading /api/orders",
+          "status": "passed",
+          "details": "Status: 200",
+          "timestamp": "2025-08-01T13:17:39.268Z"
+        },
+        {
+          "test": "Trading /api/orders",
+          "status": "failed",
+          "details": "Request failed with status code 404",
+          "timestamp": "2025-08-01T13:17:39.271Z"
+        },
+        {
+          "test": "Trading /api/orderbook/BTC_USDT",
+          "status": "failed",
+          "details": "Request failed with status code 404",
+          "timestamp": "2025-08-01T13:17:39.273Z"
+        },
+        {
+          "test": "Trading /api/trades/BTC_USDT",
+          "status": "failed",
+          "details": "Request failed with status code 404",
+          "timestamp": "2025-08-01T13:17:39.275Z"
+        },
+        {
+          "test": "Import /api/assets/import-token",
+          "status": "failed",
+          "details": "Request failed with status code 404",
+          "timestamp": "2025-08-01T13:17:39.277Z"
+        },
+        {
+          "test": "Import /api/dex/create-pair",
+          "status": "failed",
+          "details": "Request failed with status code 404",
+          "timestamp": "2025-08-01T13:17:39.279Z"
+        },
+        {
+          "test": "Admin /api/admin/assets",
+          "status": "passed",
+          "details": "Status: 200",
+          "timestamp": "2025-08-01T13:17:39.283Z"
+        },
+        {
+          "test": "Admin /api/admin/wallets",
+          "status": "passed",
+          "details": "Status: 200",
+          "timestamp": "2025-08-01T13:17:39.285Z"
+        },
+        {
+          "test": "Admin /api/admin/users",
+          "status": "passed",
+          "details": "Status: 200",
+          "timestamp": "2025-08-01T13:17:39.287Z"
+        },
+        {
+          "test": "Admin /api/admin/transactions",
+          "status": "passed",
+          "details": "Status: 200",
+          "timestamp": "2025-08-01T13:17:39.289Z"
+        },
+        {
+          "test": "Admin /api/admin/orders",
+          "status": "passed",
+          "details": "Status: 200",
+          "timestamp": "2025-08-01T13:17:39.290Z"
+        },
+        {
+          "test": "Admin /api/admin/deposits",
+          "status": "passed",
+          "details": "Status: 200",
+          "timestamp": "2025-08-01T13:17:39.293Z"
+        },
+        {
+          "test": "Admin /api/admin/withdrawals",
+          "status": "passed",
+          "details": "Status: 200",
+          "timestamp": "2025-08-01T13:17:39.295Z"
+        },
+        {
+          "test": "Admin /api/admin/hot-wallet/dashboard",
+          "status": "failed",
+          "details": "Request failed with status code 404",
+          "timestamp": "2025-08-01T13:17:39.296Z"
+        },
+        {
+          "test": "Admin /api/admin/wrapped-tokens/dashboard",
+          "status": "failed",
+          "details": "Request failed with status code 404",
+          "timestamp": "2025-08-01T13:17:39.298Z"
+        },
+        {
+          "test": "CrossChain /api/cross-chain/networks",
+          "status": "passed",
+          "details": "Status: 200",
+          "timestamp": "2025-08-01T13:17:39.299Z"
+        },
+        {
+          "test": "CrossChain /api/deposits/addresses/test-user",
+          "status": "passed",
+          "details": "Status: 200",
+          "timestamp": "2025-08-01T13:17:39.302Z"
+        },
+        {
+          "test": "CrossChain /api/deposits/generate-address",
+          "status": "failed",
+          "details": "Request failed with status code 404",
+          "timestamp": "2025-08-01T13:17:39.304Z"
+        },
+        {
+          "test": "Wallet /api/wallets/assets?userId=test-user",
+          "status": "passed",
+          "details": "Status: 200",
+          "timestamp": "2025-08-01T13:17:39.308Z"
+        },
+        {
+          "test": "Wallet /api/wallets/create",
+          "status": "passed",
+          "details": "Status: 201",
+          "timestamp": "2025-08-01T13:17:39.310Z"
+        },
+        {
+          "test": "Wallet /api/admin/wallets/available-tokens",
+          "status": "passed",
+          "details": "Status: 200",
+          "timestamp": "2025-08-01T13:17:39.313Z"
+        },
+        {
+          "test": "Wallet /api/admin/wallets/transfer",
+          "status": "failed",
+          "details": "Request failed with status code 404",
+          "timestamp": "2025-08-01T13:17:39.315Z"
+        }
+      ]
+    },
+    "frontend": {
+      "passed": 0,
+      "failed": 3,
+      "total": 3,
+      "details": [
+        {
+          "test": "Frontend Health Check",
+          "status": "failed",
+          "details": "",
+          "timestamp": "2025-08-01T13:17:39.348Z"
+        },
+        {
+          "test": "Markets API Integration",
+          "status": "failed",
+          "details": "",
+          "timestamp": "2025-08-01T13:17:39.349Z"
+        },
+        {
+          "test": "Tokens API Integration",
+          "status": "failed",
+          "details": "",
+          "timestamp": "2025-08-01T13:17:39.350Z"
+        }
+      ]
+    },
+    "admin": {
+      "passed": 1,
+      "failed": 3,
+      "total": 4,
+      "details": [
+        {
+          "test": "Admin Panel Health Check",
+          "status": "failed",
+          "details": "",
+          "timestamp": "2025-08-01T13:17:39.351Z"
+        },
+        {
+          "test": "Admin Assets Management",
+          "status": "passed",
+          "details": "Admin feature operational",
+          "timestamp": "2025-08-01T13:17:39.353Z"
+        },
+        {
+          "test": "Hot Wallet Management",
+          "status": "failed",
+          "details": "Request failed with status code 404",
+          "timestamp": "2025-08-01T13:17:39.354Z"
+        },
+        {
+          "test": "Wrapped Tokens Management",
+          "status": "failed",
+          "details": "Request failed with status code 404",
+          "timestamp": "2025-08-01T13:17:39.356Z"
+        }
+      ]
+    },
+    "synchronization": {
+      "passed": 7,
+      "failed": 2,
+      "total": 9,
+      "details": [
+        {
+          "test": "Sync Status Check",
+          "status": "passed",
+          "details": "Status: 200, Response: {\"success\":true,\"data\":{\"timestamp\":\"2025-08-01T13:17:39.332Z\",\"backend\":{\"status\":\"operational\",\"im...",
+          "timestamp": "2025-08-01T13:17:39.333Z"
+        },
+        {
+          "test": "Force Sync Trigger",
+          "status": "passed",
+          "details": "Status: 200, Response: {\"success\":true,\"data\":{\"tokensReloaded\":24,\"pairsReloaded\":28,\"globalStateUpdated\":true,\"timestamp\"...",
+          "timestamp": "2025-08-01T13:17:39.336Z"
+        },
+        {
+          "test": "Assets Sync to DEX",
+          "status": "failed",
+          "details": "Error: Request failed with status code 400, Status: 400",
+          "timestamp": "2025-08-01T13:17:39.338Z"
+        },
+        {
+          "test": "Assets Sync Status",
+          "status": "passed",
+          "details": "Status: 200, Response: {\"success\":true,\"status\":\"operational\",\"last_sync\":\"2025-08-01T13:17:39.339Z\",\"synced_count\":15,\"tot...",
+          "timestamp": "2025-08-01T13:17:39.339Z"
+        },
+        {
+          "test": "Trading Pairs Sync Status",
+          "status": "passed",
+          "details": "Status: 200, Response: {\"success\":true,\"status\":\"operational\",\"last_sync\":\"2025-08-01T13:17:39.340Z\",\"synced_count\":8,\"tota...",
+          "timestamp": "2025-08-01T13:17:39.341Z"
+        },
+        {
+          "test": "Wallets Sync Status",
+          "status": "passed",
+          "details": "Status: 200, Response: {\"success\":true,\"status\":\"operational\",\"last_sync\":\"2025-08-01T13:17:39.341Z\",\"synced_count\":13,\"tot...",
+          "timestamp": "2025-08-01T13:17:39.342Z"
+        },
+        {
+          "test": "Contracts Sync Status",
+          "status": "passed",
+          "details": "Status: 200, Response: {\"success\":true,\"status\":\"operational\",\"last_sync\":\"2025-08-01T13:17:39.343Z\",\"synced_count\":15,\"tot...",
+          "timestamp": "2025-08-01T13:17:39.344Z"
+        },
+        {
+          "test": "Transactions Sync Status",
+          "status": "passed",
+          "details": "Status: 200, Response: {\"success\":true,\"status\":\"operational\",\"last_sync\":\"2025-08-01T13:17:39.344Z\",\"synced_count\":150,\"pe...",
+          "timestamp": "2025-08-01T13:17:39.345Z"
+        },
+        {
+          "test": "Token Creation for Sync",
+          "status": "failed",
+          "details": "Request failed with status code 404",
+          "timestamp": "2025-08-01T13:17:39.347Z"
+        }
+      ]
+    },
+    "integration": {
+      "passed": 3,
+      "failed": 15,
+      "total": 18,
+      "details": [
+        {
+          "test": "Trading Pair Creation",
+          "status": "failed",
+          "details": "Request failed with status code 404",
+          "timestamp": "2025-08-01T13:17:39.357Z"
+        },
+        {
+          "test": "Universal Import",
+          "status": "failed",
+          "details": "Request failed with status code 404",
+          "timestamp": "2025-08-01T13:17:39.359Z"
+        },
+        {
+          "test": "BITCOIN Network",
+          "status": "failed",
+          "details": "Request failed with status code 404",
+          "timestamp": "2025-08-01T13:17:39.360Z"
+        },
+        {
+          "test": "ETHEREUM Network",
+          "status": "failed",
+          "details": "Request failed with status code 404",
+          "timestamp": "2025-08-01T13:17:39.362Z"
+        },
+        {
+          "test": "BSC Network",
+          "status": "failed",
+          "details": "Request failed with status code 404",
+          "timestamp": "2025-08-01T13:17:39.363Z"
+        },
+        {
+          "test": "AVALANCHE Network",
+          "status": "failed",
+          "details": "Request failed with status code 404",
+          "timestamp": "2025-08-01T13:17:39.364Z"
+        },
+        {
+          "test": "POLYGON Network",
+          "status": "failed",
+          "details": "Request failed with status code 404",
+          "timestamp": "2025-08-01T13:17:39.366Z"
+        },
+        {
+          "test": "ARBITRUM Network",
+          "status": "failed",
+          "details": "Request failed with status code 404",
+          "timestamp": "2025-08-01T13:17:39.368Z"
+        },
+        {
+          "test": "FANTOM Network",
+          "status": "failed",
+          "details": "Request failed with status code 404",
+          "timestamp": "2025-08-01T13:17:39.369Z"
+        },
+        {
+          "test": "LINEA Network",
+          "status": "failed",
+          "details": "Request failed with status code 404",
+          "timestamp": "2025-08-01T13:17:39.371Z"
+        },
+        {
+          "test": "SOLANA Network",
+          "status": "failed",
+          "details": "Request failed with status code 404",
+          "timestamp": "2025-08-01T13:17:39.373Z"
+        },
+        {
+          "test": "UNICHAIN Network",
+          "status": "failed",
+          "details": "Request failed with status code 404",
+          "timestamp": "2025-08-01T13:17:39.374Z"
+        },
+        {
+          "test": "OPBNB Network",
+          "status": "failed",
+          "details": "Request failed with status code 404",
+          "timestamp": "2025-08-01T13:17:39.376Z"
+        },
+        {
+          "test": "BASE Network",
+          "status": "failed",
+          "details": "Request failed with status code 404",
+          "timestamp": "2025-08-01T13:17:39.377Z"
+        },
+        {
+          "test": "POLYGON-ZKEVM Network",
+          "status": "failed",
+          "details": "Request failed with status code 404",
+          "timestamp": "2025-08-01T13:17:39.379Z"
+        },
+        {
+          "test": "Markets Load Time",
+          "status": "passed",
+          "details": "Response time: 1ms",
+          "timestamp": "2025-08-01T13:17:39.380Z"
+        },
+        {
+          "test": "Admin Assets Load Time",
+          "status": "passed",
+          "details": "Response time: 2ms",
+          "timestamp": "2025-08-01T13:17:39.382Z"
+        },
+        {
+          "test": "Trading Pairs Load Time",
+          "status": "passed",
+          "details": "Response time: 2ms",
+          "timestamp": "2025-08-01T13:17:39.384Z"
+        }
+      ]
+    },
+    "overall": {
+      "passed": 28,
+      "failed": 34,
+      "total": 62
+    }
+  },
+  "summary": {
+    "totalTests": 62,
+    "passedTests": 28,
+    "failedTests": 34,
+    "categories": [
+      {
+        "name": "backend",
+        "passed": 17,
+        "failed": 11,
+        "total": 28,
+        "successRate": "60.71"
+      },
+      {
+        "name": "frontend",
+        "passed": 0,
+        "failed": 3,
+        "total": 3,
+        "successRate": "0.00"
+      },
+      {
+        "name": "admin",
+        "passed": 1,
+        "failed": 3,
+        "total": 4,
+        "successRate": "25.00"
+      },
+      {
+        "name": "synchronization",
+        "passed": 7,
+        "failed": 2,
+        "total": 9,
+        "successRate": "77.78"
+      },
+      {
+        "name": "integration",
+        "passed": 3,
+        "failed": 15,
+        "total": 18,
+        "successRate": "16.67"
+      }
+    ]
+  }
+}
