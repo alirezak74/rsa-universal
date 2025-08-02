@@ -1,0 +1,249 @@
+{
+  "successRate": 100,
+  "totalTests": 40,
+  "passed": 40,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "Backend Health Check",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:29:01.824Z"
+    },
+    {
+      "name": "Backend Health Verify",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:29:01.827Z"
+    },
+    {
+      "name": "Get Tokens List",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:29:01.829Z"
+    },
+    {
+      "name": "Get Markets Data",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:29:01.831Z"
+    },
+    {
+      "name": "Get Live Prices",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:29:01.833Z"
+    },
+    {
+      "name": "Get AI Assets Data",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:29:01.836Z"
+    },
+    {
+      "name": "Get Market Pair Trades",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:29:01.837Z"
+    },
+    {
+      "name": "Get Network Status",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:29:01.840Z"
+    },
+    {
+      "name": "Get Cross-Chain Routes",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:29:01.843Z"
+    },
+    {
+      "name": "Health Check Duplicate",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:29:01.844Z"
+    },
+    {
+      "name": "Universal Token Import",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:29:01.851Z"
+    },
+    {
+      "name": "Create Trading Pair",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:29:01.854Z"
+    },
+    {
+      "name": "Token in Admin Assets",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:29:04.860Z"
+    },
+    {
+      "name": "Token in Wallet Assets",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:29:04.863Z"
+    },
+    {
+      "name": "Trading Pair in List",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:29:04.865Z"
+    },
+    {
+      "name": "Get Tokens List Verify",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:29:04.867Z"
+    },
+    {
+      "name": "Get Trading Pairs Verify",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:29:04.869Z"
+    },
+    {
+      "name": "Admin Tokens Management",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:29:04.872Z"
+    },
+    {
+      "name": "Admin Deposits Overview",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:29:04.873Z"
+    },
+    {
+      "name": "Admin Withdrawals Overview",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:29:04.875Z"
+    },
+    {
+      "name": "Admin Trades Overview",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:29:04.877Z"
+    },
+    {
+      "name": "Admin Gas Settings",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:29:04.878Z"
+    },
+    {
+      "name": "Admin Emergency Status",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:29:04.879Z"
+    },
+    {
+      "name": "Cross-Chain Networks",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:29:04.881Z"
+    },
+    {
+      "name": "Get Deposit Addresses",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:29:04.883Z"
+    },
+    {
+      "name": "Network Status Check",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:29:04.884Z"
+    },
+    {
+      "name": "Sync Status Assets",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:29:04.886Z"
+    },
+    {
+      "name": "Sync Status Trading Pairs",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:29:04.887Z"
+    },
+    {
+      "name": "Sync Status Wallets",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:29:04.889Z"
+    },
+    {
+      "name": "Sync Status Contracts",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:29:04.890Z"
+    },
+    {
+      "name": "Sync Status Transactions",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:29:04.891Z"
+    },
+    {
+      "name": "Get Wallet Settings",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:29:04.892Z"
+    },
+    {
+      "name": "Cross-Chain Routes Verify",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:29:04.893Z"
+    },
+    {
+      "name": "Markets Data Verify",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:29:04.895Z"
+    },
+    {
+      "name": "Live Prices Verify",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:29:04.896Z"
+    },
+    {
+      "name": "AI Assets Verify",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:29:04.897Z"
+    },
+    {
+      "name": "Market Trades Verify",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:29:04.899Z"
+    },
+    {
+      "name": "Health Status Final",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:29:04.900Z"
+    },
+    {
+      "name": "Backend Status Final",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:29:04.901Z"
+    },
+    {
+      "name": "System Status Final",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:29:04.901Z"
+    }
+  ],
+  "timestamp": "2025-08-01T03:29:04.902Z"
+}

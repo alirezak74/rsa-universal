@@ -1,0 +1,36 @@
+{
+  "name": "rsa-sdk-js",
+  "version": "1.0.0",
+  "description": "JavaScript SDK for RSA Chain blockchain network",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "node index.js",
+    "dev": "node index.js"
+  },
+  "keywords": [
+    "rsa",
+    "blockchain",
+    "cryptocurrency",
+    "sdk",
+    "payments",
+    "dex"
+  ],
+  "author": "RSA Chain Team",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "crypto": "*"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rsacrypt/rsachain"
+  },
+  "bugs": {
+    "url": "https://github.com/rsacrypt/rsachain/issues"
+  },
+  "homepage": "https://rsacrypto.com"
+} 
