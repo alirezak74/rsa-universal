@@ -1,0 +1,28 @@
+# Example RSA Chain Environment Variables
+
+# --- Database (PostgreSQL) ---
+DB_HOST=localhost
+DB_PORT=5432
+DB_USER=rsachain
+DB_PASS=changeme
+DB_NAME=rsachain
+
+# --- Node/Network ---
+NETWORK=mainnet
+NODE_SEED=your-node-seed-here
+NODE_PORT=11625
+PUBLIC_HTTP_PORT=11626
+
+# --- Web Services ---
+PORT=8080  # Default port for API servers (e.g., Horizon)
+NODE_URL=http://localhost:11625
+HORIZON_URL=http://localhost:8080
+
+# --- Faucet ---
+FAUCET_PORT=5000
+
+# --- Logging ---
+LOG_FILE=core.log
+
+# Add any other secrets or API keys below
+# SECRET_KEY=your-secret-key 

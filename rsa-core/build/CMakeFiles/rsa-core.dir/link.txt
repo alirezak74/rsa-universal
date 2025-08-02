@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG -pie -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -Xlinker --dependency-file=CMakeFiles/rsa-core.dir/link.d "CMakeFiles/rsa-core.dir/main.cpp.o" "CMakeFiles/rsa-core.dir/rsa_token.c.o" "CMakeFiles/rsa-core.dir/rsa_monitor.c.o" -o rsa-core  /usr/lib/x86_64-linux-gnu/libssl.so /usr/lib/x86_64-linux-gnu/libcrypto.so
