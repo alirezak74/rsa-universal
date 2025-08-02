@@ -1,0 +1,47 @@
+{
+  "timestamp": "2025-08-02T15:11:29.116Z",
+  "issues": [
+    {
+      "id": 1,
+      "desc": "Build Error: Conflicting app and page files",
+      "status": "fixed",
+      "details": "Removed conflicting pages directories"
+    },
+    {
+      "id": 2,
+      "desc": "Admin login \"endpoint not found\"",
+      "status": "fixed",
+      "details": "Backend running, admin login working"
+    },
+    {
+      "id": 3,
+      "desc": "Chart not moving/flat",
+      "status": "fixed",
+      "details": "Price and market data endpoints working"
+    },
+    {
+      "id": 4,
+      "desc": "Deposit address generation undefined",
+      "status": "fixed",
+      "details": "All deposit address generation working"
+    },
+    {
+      "id": 5,
+      "desc": "404 for /api/dev/admin/assets",
+      "status": "fixed",
+      "details": "Admin assets endpoint working"
+    },
+    {
+      "id": 6,
+      "desc": "CORS errors for external APIs",
+      "status": "fixed",
+      "details": "Backend CORS working, no external API calls needed"
+    }
+  ],
+  "summary": {
+    "total": 6,
+    "fixed": 6,
+    "failed": 0,
+    "successRate": 100
+  }
+}

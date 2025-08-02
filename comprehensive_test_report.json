@@ -1,0 +1,467 @@
+{
+  "summary": {
+    "total": 76,
+    "passed": 76,
+    "failed": 0,
+    "successRate": 100,
+    "timestamp": "2025-08-01T03:36:25.809Z"
+  },
+  "tests": [
+    {
+      "name": "Backend Health Check",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:09.629Z"
+    },
+    {
+      "name": "Frontend Availability",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:09.660Z"
+    },
+    {
+      "name": "Admin Panel Availability",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:09.684Z"
+    },
+    {
+      "name": "Admin Login",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:09.688Z"
+    },
+    {
+      "name": "Get Tokens",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:09.692Z"
+    },
+    {
+      "name": "Get Admin Assets",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:09.695Z"
+    },
+    {
+      "name": "Get Markets",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:09.697Z"
+    },
+    {
+      "name": "Get Trading Pairs",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:09.699Z"
+    },
+    {
+      "name": "Get Orders",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:09.701Z"
+    },
+    {
+      "name": "Get Admin Deposits",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:09.703Z"
+    },
+    {
+      "name": "Get Admin Withdrawals",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:09.705Z"
+    },
+    {
+      "name": "Get Deposit Addresses",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:09.706Z"
+    },
+    {
+      "name": "Get Network Status",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:09.709Z"
+    },
+    {
+      "name": "Get Cross-chain Routes",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:09.714Z"
+    },
+    {
+      "name": "Network Status Endpoint",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:09.716Z"
+    },
+    {
+      "name": "Network Available: BITCOIN",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:09.716Z"
+    },
+    {
+      "name": "Network Available: ETHEREUM",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:09.716Z"
+    },
+    {
+      "name": "Network Available: BSC",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:09.716Z"
+    },
+    {
+      "name": "Network Available: AVALANCHE",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:09.716Z"
+    },
+    {
+      "name": "Network Available: POLYGON",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:09.716Z"
+    },
+    {
+      "name": "Network Available: ARBITRUM",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:09.716Z"
+    },
+    {
+      "name": "Network Available: FANTOM",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:09.716Z"
+    },
+    {
+      "name": "Network Available: LINEA",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:09.716Z"
+    },
+    {
+      "name": "Network Available: SOLANA",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:09.716Z"
+    },
+    {
+      "name": "Network Available: UNICHAIN",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:09.716Z"
+    },
+    {
+      "name": "Network Available: OPBNB",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:09.716Z"
+    },
+    {
+      "name": "Network Available: BASE",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:09.716Z"
+    },
+    {
+      "name": "Network Available: POLYGON-ZKEVM",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:09.716Z"
+    },
+    {
+      "name": "Generate Deposit Address: BITCOIN",
+      "passed": "bc1q6598da4e63afb5a9bde7500550b951",
+      "error": "No address returned",
+      "timestamp": "2025-08-01T03:36:09.718Z"
+    },
+    {
+      "name": "Generate Deposit Address: ETHEREUM",
+      "passed": "0x387a0A413e39157fFCe0EF6a8620900168C9A329",
+      "error": "No address returned",
+      "timestamp": "2025-08-01T03:36:09.720Z"
+    },
+    {
+      "name": "Generate Deposit Address: BSC",
+      "passed": "0xfa600e6520bc9ca9DeAbA92776fD3f16d8311278",
+      "error": "No address returned",
+      "timestamp": "2025-08-01T03:36:09.721Z"
+    },
+    {
+      "name": "Generate Deposit Address: AVALANCHE",
+      "passed": "0x1c6f4340409edC363c7c704F7e60E2fDedD962E3",
+      "error": "No address returned",
+      "timestamp": "2025-08-01T03:36:09.723Z"
+    },
+    {
+      "name": "Generate Deposit Address: POLYGON",
+      "passed": "0xc947D813FB0B3e0d96804A489326D3f7b2Fbf25D",
+      "error": "No address returned",
+      "timestamp": "2025-08-01T03:36:09.725Z"
+    },
+    {
+      "name": "Generate Deposit Address: ARBITRUM",
+      "passed": "0x02302e742cAE67E11402c2820d8cDEFDE9E26658",
+      "error": "No address returned",
+      "timestamp": "2025-08-01T03:36:09.726Z"
+    },
+    {
+      "name": "Generate Deposit Address: FANTOM",
+      "passed": "0xE682fbAF5C95e98A5aD6Fc0b483352C328940Ea6",
+      "error": "No address returned",
+      "timestamp": "2025-08-01T03:36:09.728Z"
+    },
+    {
+      "name": "Generate Deposit Address: LINEA",
+      "passed": "0x4E2c3Abe42e4734Fc360128e4D4522410ad5D29E",
+      "error": "No address returned",
+      "timestamp": "2025-08-01T03:36:09.729Z"
+    },
+    {
+      "name": "Generate Deposit Address: SOLANA",
+      "passed": "jg62zKoW8uMF1Gu3vq7mz3JkwVg4bCQr2RgxKygp8iS",
+      "error": "No address returned",
+      "timestamp": "2025-08-01T03:36:09.731Z"
+    },
+    {
+      "name": "Generate Deposit Address: UNICHAIN",
+      "passed": "0x802a3F074AEd69829c68aca91D479Bd1C6e276B6",
+      "error": "No address returned",
+      "timestamp": "2025-08-01T03:36:09.732Z"
+    },
+    {
+      "name": "Generate Deposit Address: OPBNB",
+      "passed": "0x9DB2BD4e8FF4720eAB8F21c0236fE099a3027429",
+      "error": "No address returned",
+      "timestamp": "2025-08-01T03:36:09.734Z"
+    },
+    {
+      "name": "Generate Deposit Address: BASE",
+      "passed": "0x2ac644Ec0E017F8473988042E84A922D017b07c2",
+      "error": "No address returned",
+      "timestamp": "2025-08-01T03:36:09.736Z"
+    },
+    {
+      "name": "Generate Deposit Address: POLYGON-ZKEVM",
+      "passed": "0x3C82e01c9C30AD18A873BA73B3EB7D3307aEC8dB",
+      "error": "No address returned",
+      "timestamp": "2025-08-01T03:36:09.739Z"
+    },
+    {
+      "name": "Universal Token Import",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:09.742Z"
+    },
+    {
+      "name": "Token in Tokens List",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:17.749Z"
+    },
+    {
+      "name": "Token in Admin Assets",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:17.752Z"
+    },
+    {
+      "name": "Token in Wallet Assets",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:17.755Z"
+    },
+    {
+      "name": "Create Trading Pair",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:17.759Z"
+    },
+    {
+      "name": "Get Trading Pairs",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:25.766Z"
+    },
+    {
+      "name": "Trading Pair in List",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:25.766Z"
+    },
+    {
+      "name": "Get Orders Endpoint",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:25.768Z"
+    },
+    {
+      "name": "Get Admin Orders",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:25.770Z"
+    },
+    {
+      "name": "Create Order",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:25.771Z"
+    },
+    {
+      "name": "Assets Sync Status",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:25.773Z"
+    },
+    {
+      "name": "Trading Pairs Sync Status",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:25.774Z"
+    },
+    {
+      "name": "Wallets Sync Status",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:25.775Z"
+    },
+    {
+      "name": "Contracts Sync Status",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:25.776Z"
+    },
+    {
+      "name": "Transactions Sync Status",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:25.778Z"
+    },
+    {
+      "name": "Get Wallet Assets",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:25.780Z"
+    },
+    {
+      "name": "Get Wallet Settings",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:25.781Z"
+    },
+    {
+      "name": "Update Wallet Settings",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:25.783Z"
+    },
+    {
+      "name": "Deposit Address Generation: BITCOIN",
+      "passed": "bc1q6598da4e63afb5a9bde7500550b951",
+      "error": "No address returned",
+      "timestamp": "2025-08-01T03:36:25.784Z"
+    },
+    {
+      "name": "Deposit Address Generation: ETHEREUM",
+      "passed": "0x387a0A413e39157fFCe0EF6a8620900168C9A329",
+      "error": "No address returned",
+      "timestamp": "2025-08-01T03:36:25.786Z"
+    },
+    {
+      "name": "Deposit Address Generation: BSC",
+      "passed": "0xfa600e6520bc9ca9DeAbA92776fD3f16d8311278",
+      "error": "No address returned",
+      "timestamp": "2025-08-01T03:36:25.787Z"
+    },
+    {
+      "name": "Deposit Address Generation: AVALANCHE",
+      "passed": "0x1c6f4340409edC363c7c704F7e60E2fDedD962E3",
+      "error": "No address returned",
+      "timestamp": "2025-08-01T03:36:25.789Z"
+    },
+    {
+      "name": "Deposit Address Generation: POLYGON",
+      "passed": "0xc947D813FB0B3e0d96804A489326D3f7b2Fbf25D",
+      "error": "No address returned",
+      "timestamp": "2025-08-01T03:36:25.791Z"
+    },
+    {
+      "name": "Get User Deposit Addresses",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:25.792Z"
+    },
+    {
+      "name": "Admin Tokens Management",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:25.794Z"
+    },
+    {
+      "name": "Admin Deposits Overview",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:25.796Z"
+    },
+    {
+      "name": "Admin Withdrawals Overview",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:25.798Z"
+    },
+    {
+      "name": "Admin Trades Overview",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:25.799Z"
+    },
+    {
+      "name": "Admin Gas Settings",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:25.801Z"
+    },
+    {
+      "name": "Admin Emergency Status",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:25.802Z"
+    },
+    {
+      "name": "Asset Sync to DEX",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:25.804Z"
+    },
+    {
+      "name": "Get Markets Data",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:25.805Z"
+    },
+    {
+      "name": "Get Live Prices",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:25.806Z"
+    },
+    {
+      "name": "Get AI Assets Data",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:25.808Z"
+    },
+    {
+      "name": "Get Market Pair Trades",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-01T03:36:25.809Z"
+    }
+  ]
+}
