@@ -1,0 +1,72 @@
+{
+  "test_summary": {
+    "test_type": "Live Synchronization Testing",
+    "total_tests": 1,
+    "passed": 0,
+    "failed": 1,
+    "warnings": 0,
+    "success_rate": "0.00%",
+    "duration_ms": 27,
+    "timestamp": "2025-08-02T06:29:25.807Z"
+  },
+  "service_status": {
+    "admin": "not_running",
+    "frontend": "not_running",
+    "backend": "not_running"
+  },
+  "sync_issues_found": [
+    {
+      "test": "Service Availability",
+      "issue": "Services not running - cannot test synchronization",
+      "solution": "Start all services: npm run dev (in each directory)"
+    }
+  ],
+  "detailed_results": {
+    "Service Availability": {
+      "success": false,
+      "error": "Some services are not running",
+      "services": {
+        "Admin Panel": {
+          "url": "http://localhost:3000/api/health",
+          "running": false,
+          "status": "not running",
+          "error": "Command failed: curl -s -X GET \"http://localhost:3000/api/health\" --max-time 10"
+        },
+        "Frontend": {
+          "url": "http://localhost:3002/api/health",
+          "running": false,
+          "status": "not running",
+          "error": "Command failed: curl -s -X GET \"http://localhost:3002/api/health\" --max-time 10"
+        },
+        "Backend": {
+          "url": "http://localhost:8001/health",
+          "running": false,
+          "status": "not running",
+          "error": "Command failed: curl -s -X GET \"http://localhost:8001/health\" --max-time 10"
+        }
+      },
+      "sync_issue": "Services not running - cannot test synchronization",
+      "suggested_fix": "Start all services: npm run dev (in each directory)"
+    }
+  },
+  "errors": [
+    "Service Availability: Some services are not running"
+  ],
+  "warnings": [],
+  "sync_recommendations": [
+    "🔄 Ensure all services (Admin, Frontend, Backend) are running on localhost",
+    "🗄️ Verify all services connect to the same database",
+    "⚡ Implement real-time sync using WebSocket or database triggers",
+    "🔄 Add API endpoints for cross-service data verification",
+    "📊 Monitor sync latency and implement retry mechanisms",
+    "🧪 Add automated sync tests to CI/CD pipeline"
+  ],
+  "troubleshooting_steps": [
+    "1. Start all services: npm run dev (in each project directory)",
+    "2. Check localhost ports: 3000 (Admin), 3002 (Frontend), 8001 (Backend)",
+    "3. Verify database is running and accessible",
+    "4. Check API endpoints respond correctly",
+    "5. Test CORS configuration for cross-origin requests",
+    "6. Monitor network requests in browser dev tools"
+  ]
+}
