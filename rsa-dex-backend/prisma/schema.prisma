@@ -1,0 +1,147 @@
+// Prisma schema for RSA DEX Backend
+// DB: SQLite (easy to migrate to Postgres)
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+enum WalletStatus {
+  ACTIVE
+  FROZEN
+  BLACKLISTED
+  PENDING
+}
+
+enum TransactionStatus {
+  PENDING
+  APPROVED
+  REJECTED
+  RECALLED
+  CANCELLED
+  SUSPICIOUS
+}
+
+enum OrderStatus {
+  ACTIVE
+  PENDING
+  COMPLETED
+  CANCELLED
+}
+
+enum OrderType {
+  LIMIT
+  MARKET
+}
+
+enum LogType {
+  INFO
+  ERROR
+  SECURITY
+  OPERATION
+}
+
+model User {
+  id        String   @id @default(uuid())
+  username  String   @unique
+  email     String   @unique
+  password  String
+  role      String   // e.g. 'admin', 'user', 'super_admin'
+  wallets   Wallet[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  logs      Log[]
+  actions   AdminAction[]
+}
+
+model Wallet {
+  id        String   @id @default(uuid())
+  address   String   @unique
+  publicKey String
+  secretKey String
+  status    WalletStatus @default(PENDING)
+  user      User?    @relation(fields: [userId], references: [id])
+  userId    String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  transactions Transaction[]
+}
+
+model Order {
+  id        String   @id @default(uuid())
+  user      User     @relation(fields: [userId], references: [id])
+  userId    String
+  type      OrderType
+  status    OrderStatus
+  tokenPair String
+  amount    Float
+  price     Float
+  trades    Trade[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Trade {
+  id        String   @id @default(uuid())
+  order     Order    @relation(fields: [orderId], references: [id])
+  orderId   String
+  amount    Float
+  price     Float
+  executedAt DateTime @default(now())
+}
+
+model Transaction {
+  id        String   @id @default(uuid())
+  hash      String   @unique
+  fromWallet Wallet? @relation(fields: [fromWalletId], references: [id])
+  fromWalletId String?
+  toWallet   Wallet? @relation(fields: [toWalletId], references: [id])
+  toWalletId String?
+  amount    Float
+  status    TransactionStatus
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Log {
+  id        String   @id @default(uuid())
+  type      LogType
+  message   String
+  user      User?    @relation(fields: [userId], references: [id])
+  userId    String?
+  createdAt DateTime @default(now())
+}
+
+model Contract {
+  id        String   @id @default(uuid())
+  address   String   @unique
+  name      String
+  status    String   // e.g. 'active', 'paused', etc.
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  tokens    Token[]
+}
+
+model Token {
+  id        String   @id @default(uuid())
+  symbol    String   @unique
+  name      String
+  contract  Contract @relation(fields: [contractId], references: [id])
+  contractId String
+  isWhitelisted Boolean @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model AdminAction {
+  id        String   @id @default(uuid())
+  user      User     @relation(fields: [userId], references: [id])
+  userId    String
+  action    String
+  details   String?
+  createdAt DateTime @default(now())
+} 

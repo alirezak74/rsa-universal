@@ -1,0 +1,506 @@
+[
+  {
+    "id": "pair_rtest_usdt_1754018218974",
+    "symbol": "rTEST/USDT",
+    "baseToken": "rTEST",
+    "quoteToken": "USDT",
+    "currentPrice": 1.5,
+    "volume24h": 0,
+    "change24h": 0,
+    "high24h": 1.5,
+    "low24h": 1.5,
+    "trades24h": 0,
+    "active": true,
+    "createdAt": "2025-08-01T03:16:58.974Z",
+    "metadata": {
+      "baseName": "TEST",
+      "quoteName": "USDT"
+    }
+  },
+  {
+    "id": "pair_rtest_usdt_1754018280878",
+    "symbol": "rTEST/USDT",
+    "baseToken": "rTEST",
+    "quoteToken": "USDT",
+    "currentPrice": 1.5,
+    "volume24h": 0,
+    "change24h": 0,
+    "high24h": 1.5,
+    "low24h": 1.5,
+    "trades24h": 0,
+    "active": true,
+    "createdAt": "2025-08-01T03:18:00.878Z",
+    "metadata": {
+      "baseName": "TEST",
+      "quoteName": "USDT"
+    }
+  },
+  {
+    "id": "pair_rtest_usdt_1754018487051",
+    "symbol": "rTEST/USDT",
+    "baseToken": "rTEST",
+    "quoteToken": "USDT",
+    "currentPrice": 1.5,
+    "volume24h": 0,
+    "change24h": 0,
+    "high24h": 1.5,
+    "low24h": 1.5,
+    "trades24h": 0,
+    "active": true,
+    "createdAt": "2025-08-01T03:21:27.052Z",
+    "metadata": {
+      "baseName": "TEST",
+      "quoteName": "USDT"
+    }
+  },
+  {
+    "id": "pair_rtest_usdt_1754018596480",
+    "symbol": "rTEST/USDT",
+    "baseToken": "rTEST",
+    "quoteToken": "USDT",
+    "currentPrice": 1.5,
+    "volume24h": 0,
+    "change24h": 0,
+    "high24h": 1.5,
+    "low24h": 1.5,
+    "trades24h": 0,
+    "active": true,
+    "createdAt": "2025-08-01T03:23:16.480Z",
+    "metadata": {
+      "baseName": "TEST",
+      "quoteName": "USDT"
+    }
+  },
+  {
+    "id": "pair_rtest_usdt_1754018760240",
+    "symbol": "rTEST/USDT",
+    "baseToken": "rTEST",
+    "quoteToken": "USDT",
+    "currentPrice": 1.5,
+    "volume24h": 0,
+    "change24h": 0,
+    "high24h": 1.5,
+    "low24h": 1.5,
+    "trades24h": 0,
+    "active": true,
+    "createdAt": "2025-08-01T03:26:00.241Z",
+    "metadata": {
+      "baseName": "TEST",
+      "quoteName": "USDT"
+    }
+  },
+  {
+    "id": "pair_rperfect_usdt_1754018898611",
+    "symbol": "rPERFECT/USDT",
+    "baseToken": "rPERFECT",
+    "quoteToken": "USDT",
+    "currentPrice": 1,
+    "volume24h": 0,
+    "change24h": 0,
+    "high24h": 1,
+    "low24h": 1,
+    "trades24h": 0,
+    "active": true,
+    "createdAt": "2025-08-01T03:28:18.611Z",
+    "metadata": {
+      "baseName": "PERFECT",
+      "quoteName": "USDT"
+    }
+  },
+  {
+    "id": "pair_rperfect_usdt_1754018941852",
+    "symbol": "rPERFECT/USDT",
+    "baseToken": "rPERFECT",
+    "quoteToken": "USDT",
+    "currentPrice": 1,
+    "volume24h": 0,
+    "change24h": 0,
+    "high24h": 1,
+    "low24h": 1,
+    "trades24h": 0,
+    "active": true,
+    "createdAt": "2025-08-01T03:29:01.852Z",
+    "metadata": {
+      "baseName": "PERFECT",
+      "quoteName": "USDT"
+    }
+  },
+  {
+    "id": "pair_rtest_usdt_1754019178412",
+    "symbol": "rTEST/USDT",
+    "baseToken": "rTEST",
+    "quoteToken": "USDT",
+    "currentPrice": 1.5,
+    "volume24h": 0,
+    "change24h": 0,
+    "high24h": 1.5,
+    "low24h": 1.5,
+    "trades24h": 0,
+    "active": true,
+    "createdAt": "2025-08-01T03:32:58.412Z",
+    "metadata": {
+      "baseName": "TEST",
+      "quoteName": "USDT"
+    }
+  },
+  {
+    "id": "pair_rtest_usdt_1754019325152",
+    "symbol": "rTEST/USDT",
+    "baseToken": "rTEST",
+    "quoteToken": "USDT",
+    "currentPrice": 1.5,
+    "volume24h": 0,
+    "change24h": 0,
+    "high24h": 1.5,
+    "low24h": 1.5,
+    "trades24h": 0,
+    "active": true,
+    "createdAt": "2025-08-01T03:35:25.152Z",
+    "metadata": {
+      "baseName": "TEST",
+      "quoteName": "USDT"
+    }
+  },
+  {
+    "id": "pair_rtest_usdt_1754019377757",
+    "symbol": "rTEST/USDT",
+    "baseToken": "rTEST",
+    "quoteToken": "USDT",
+    "currentPrice": 1.5,
+    "volume24h": 0,
+    "change24h": 0,
+    "high24h": 1.5,
+    "low24h": 1.5,
+    "trades24h": 0,
+    "active": true,
+    "createdAt": "2025-08-01T03:36:17.757Z",
+    "metadata": {
+      "baseName": "TEST",
+      "quoteName": "USDT"
+    }
+  },
+  {
+    "id": "pair_rsync_usdt_1754020271139",
+    "symbol": "rSYNC/USDT",
+    "baseToken": "rSYNC",
+    "quoteToken": "USDT",
+    "currentPrice": 2.5,
+    "volume24h": 0,
+    "change24h": 0,
+    "high24h": 2.5,
+    "low24h": 2.5,
+    "trades24h": 0,
+    "active": true,
+    "createdAt": "2025-08-01T03:51:11.139Z",
+    "metadata": {
+      "baseName": "SYNC",
+      "quoteName": "USDT"
+    }
+  },
+  {
+    "id": "pair_rqatest_usdt_1754022536960",
+    "symbol": "rQATEST/USDT",
+    "baseToken": "rQATEST",
+    "quoteToken": "USDT",
+    "currentPrice": 10.5,
+    "volume24h": 0,
+    "change24h": 0,
+    "high24h": 10.5,
+    "low24h": 10.5,
+    "trades24h": 0,
+    "active": true,
+    "createdAt": "2025-08-01T04:28:56.961Z",
+    "metadata": {
+      "baseName": "QATEST",
+      "quoteName": "USDT"
+    }
+  },
+  {
+    "id": "pair_rsynctest_usdt_1754022537676",
+    "symbol": "rSYNCTEST/USDT",
+    "baseToken": "rSYNCTEST",
+    "quoteToken": "USDT",
+    "currentPrice": 1,
+    "volume24h": 0,
+    "change24h": 0,
+    "high24h": 1,
+    "low24h": 1,
+    "trades24h": 0,
+    "active": true,
+    "createdAt": "2025-08-01T04:28:57.677Z",
+    "metadata": {
+      "baseName": "SYNCTEST",
+      "quoteName": "USDT"
+    }
+  },
+  {
+    "id": "pair_rqatest_usdt_1754022695964",
+    "symbol": "rQATEST/USDT",
+    "baseToken": "rQATEST",
+    "quoteToken": "USDT",
+    "currentPrice": 10.5,
+    "volume24h": 0,
+    "change24h": 0,
+    "high24h": 10.5,
+    "low24h": 10.5,
+    "trades24h": 0,
+    "active": true,
+    "createdAt": "2025-08-01T04:31:35.964Z",
+    "metadata": {
+      "baseName": "QATEST",
+      "quoteName": "USDT"
+    }
+  },
+  {
+    "id": "pair_rsynctest_usdt_1754022696007",
+    "symbol": "rSYNCTEST/USDT",
+    "baseToken": "rSYNCTEST",
+    "quoteToken": "USDT",
+    "currentPrice": 1,
+    "volume24h": 0,
+    "change24h": 0,
+    "high24h": 1,
+    "low24h": 1,
+    "trades24h": 0,
+    "active": true,
+    "createdAt": "2025-08-01T04:31:36.007Z",
+    "metadata": {
+      "baseName": "SYNCTEST",
+      "quoteName": "USDT"
+    }
+  },
+  {
+    "id": "pair_rqatest_usdt_1754022776353",
+    "symbol": "rQATEST/USDT",
+    "baseToken": "rQATEST",
+    "quoteToken": "USDT",
+    "currentPrice": 10.5,
+    "volume24h": 0,
+    "change24h": 0,
+    "high24h": 10.5,
+    "low24h": 10.5,
+    "trades24h": 0,
+    "active": true,
+    "createdAt": "2025-08-01T04:32:56.353Z",
+    "metadata": {
+      "baseName": "QATEST",
+      "quoteName": "USDT"
+    }
+  },
+  {
+    "id": "pair_rsynctest_usdt_1754022776397",
+    "symbol": "rSYNCTEST/USDT",
+    "baseToken": "rSYNCTEST",
+    "quoteToken": "USDT",
+    "currentPrice": 1,
+    "volume24h": 0,
+    "change24h": 0,
+    "high24h": 1,
+    "low24h": 1,
+    "trades24h": 0,
+    "active": true,
+    "createdAt": "2025-08-01T04:32:56.397Z",
+    "metadata": {
+      "baseName": "SYNCTEST",
+      "quoteName": "USDT"
+    }
+  },
+  {
+    "id": "pair_rqatest_usdt_1754023174596",
+    "symbol": "rQATEST/USDT",
+    "baseToken": "rQATEST",
+    "quoteToken": "USDT",
+    "currentPrice": 10.5,
+    "volume24h": 0,
+    "change24h": 0,
+    "high24h": 10.5,
+    "low24h": 10.5,
+    "trades24h": 0,
+    "active": true,
+    "createdAt": "2025-08-01T04:39:34.597Z",
+    "metadata": {
+      "baseName": "QATEST",
+      "quoteName": "USDT"
+    }
+  },
+  {
+    "id": "pair_rsynctest_usdt_1754023174634",
+    "symbol": "rSYNCTEST/USDT",
+    "baseToken": "rSYNCTEST",
+    "quoteToken": "USDT",
+    "currentPrice": 1,
+    "volume24h": 0,
+    "change24h": 0,
+    "high24h": 1,
+    "low24h": 1,
+    "trades24h": 0,
+    "active": true,
+    "createdAt": "2025-08-01T04:39:34.634Z",
+    "metadata": {
+      "baseName": "SYNCTEST",
+      "quoteName": "USDT"
+    }
+  },
+  {
+    "id": "pair_rqatest_usdt_1754023276082",
+    "symbol": "rQATEST/USDT",
+    "baseToken": "rQATEST",
+    "quoteToken": "USDT",
+    "currentPrice": 10.5,
+    "volume24h": 0,
+    "change24h": 0,
+    "high24h": 10.5,
+    "low24h": 10.5,
+    "trades24h": 0,
+    "active": true,
+    "createdAt": "2025-08-01T04:41:16.083Z",
+    "metadata": {
+      "baseName": "QATEST",
+      "quoteName": "USDT"
+    }
+  },
+  {
+    "id": "pair_rsynctest_usdt_1754023276120",
+    "symbol": "rSYNCTEST/USDT",
+    "baseToken": "rSYNCTEST",
+    "quoteToken": "USDT",
+    "currentPrice": 1,
+    "volume24h": 0,
+    "change24h": 0,
+    "high24h": 1,
+    "low24h": 1,
+    "trades24h": 0,
+    "active": true,
+    "createdAt": "2025-08-01T04:41:16.120Z",
+    "metadata": {
+      "baseName": "SYNCTEST",
+      "quoteName": "USDT"
+    }
+  },
+  {
+    "id": "pair_rqatest_usdt_1754023341037",
+    "symbol": "rQATEST/USDT",
+    "baseToken": "rQATEST",
+    "quoteToken": "USDT",
+    "currentPrice": 10.5,
+    "volume24h": 0,
+    "change24h": 0,
+    "high24h": 10.5,
+    "low24h": 10.5,
+    "trades24h": 0,
+    "active": true,
+    "createdAt": "2025-08-01T04:42:21.037Z",
+    "metadata": {
+      "baseName": "QATEST",
+      "quoteName": "USDT"
+    }
+  },
+  {
+    "id": "pair_rsynctest_usdt_1754023341080",
+    "symbol": "rSYNCTEST/USDT",
+    "baseToken": "rSYNCTEST",
+    "quoteToken": "USDT",
+    "currentPrice": 1,
+    "volume24h": 0,
+    "change24h": 0,
+    "high24h": 1,
+    "low24h": 1,
+    "trades24h": 0,
+    "active": true,
+    "createdAt": "2025-08-01T04:42:21.080Z",
+    "metadata": {
+      "baseName": "SYNCTEST",
+      "quoteName": "USDT"
+    }
+  },
+  {
+    "id": "pair_synctest_usdt_1754024034090",
+    "symbol": "SYNCTEST/USDT",
+    "baseToken": "SYNCTEST",
+    "quoteToken": "USDT",
+    "currentPrice": 1.5,
+    "volume24h": 0,
+    "change24h": 0,
+    "high24h": 1.5,
+    "low24h": 1.5,
+    "trades24h": 0,
+    "active": true,
+    "createdAt": "2025-08-01T04:53:54.090Z",
+    "metadata": {
+      "baseName": "SYNCTEST",
+      "quoteName": "USDT"
+    }
+  },
+  {
+    "id": "pair_synctest_usdt_1754024043706",
+    "symbol": "SYNCTEST/USDT",
+    "baseToken": "SYNCTEST",
+    "quoteToken": "USDT",
+    "currentPrice": 1.5,
+    "volume24h": 0,
+    "change24h": 0,
+    "high24h": 1.5,
+    "low24h": 1.5,
+    "trades24h": 0,
+    "active": true,
+    "createdAt": "2025-08-01T04:54:03.707Z",
+    "metadata": {
+      "baseName": "SYNCTEST",
+      "quoteName": "USDT"
+    }
+  },
+  {
+    "id": "pair_finaltest_usdt_1754024178051",
+    "symbol": "FINALTEST/USDT",
+    "baseToken": "FINALTEST",
+    "quoteToken": "USDT",
+    "currentPrice": 2.5,
+    "volume24h": 0,
+    "change24h": 0,
+    "high24h": 2.5,
+    "low24h": 2.5,
+    "trades24h": 0,
+    "active": true,
+    "createdAt": "2025-08-01T04:56:18.052Z",
+    "metadata": {
+      "baseName": "FINALTEST",
+      "quoteName": "USDT"
+    }
+  },
+  {
+    "id": "pair_finaltest_usdt_1754024191363",
+    "symbol": "FINALTEST/USDT",
+    "baseToken": "FINALTEST",
+    "quoteToken": "USDT",
+    "currentPrice": 2.5,
+    "volume24h": 0,
+    "change24h": 0,
+    "high24h": 2.5,
+    "low24h": 2.5,
+    "trades24h": 0,
+    "active": true,
+    "createdAt": "2025-08-01T04:56:31.363Z",
+    "metadata": {
+      "baseName": "FINALTEST",
+      "quoteName": "USDT"
+    }
+  },
+  {
+    "id": "pair_ultimate_btc_1754024257411",
+    "symbol": "ULTIMATE/BTC",
+    "baseToken": "ULTIMATE",
+    "quoteToken": "BTC",
+    "currentPrice": 0.001,
+    "volume24h": 0,
+    "change24h": 0,
+    "high24h": 0.001,
+    "low24h": 0.001,
+    "trades24h": 0,
+    "active": true,
+    "createdAt": "2025-08-01T04:57:37.411Z",
+    "metadata": {
+      "baseName": "ULTIMATE",
+      "quoteName": "BTC"
+    }
+  }
+]

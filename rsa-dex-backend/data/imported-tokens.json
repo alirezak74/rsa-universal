@@ -1,0 +1,777 @@
+[
+  {
+    "id": "asset_1754018204940",
+    "name": "Wrapped Test Token",
+    "symbol": "rTEST",
+    "realSymbol": "TEST",
+    "decimals": 18,
+    "contract_address": "0xfcd188337ae659d496c463186382c00ce2ec84b0",
+    "network": "rsa",
+    "is_native": false,
+    "current_price": 0,
+    "status": "active",
+    "is_visible": true,
+    "swap_enabled": true,
+    "trading_enabled": true,
+    "deposit_enabled": true,
+    "withdrawal_enabled": true,
+    "wrapped_token_of": "TEST",
+    "created_at": "2025-08-01T03:16:44.940Z",
+    "metadata": {
+      "description": "Wrapped Test Token token on RSA Chain",
+      "totalSupply": 0,
+      "circulatingSupply": 0,
+      "bridgeContract": "0xfcd188337ae659d496c463186382c00ce2ec84b0",
+      "originalToken": {
+        "name": "Test Token",
+        "networks": [
+          "ethereum",
+          "polygon",
+          "bsc"
+        ]
+      }
+    }
+  },
+  {
+    "id": "asset_1754018266848",
+    "name": "Wrapped Test Token",
+    "symbol": "rTEST",
+    "realSymbol": "TEST",
+    "decimals": 18,
+    "contract_address": "0xfcd188337ae659d496c463186382c00ce2ec84b0",
+    "network": "rsa",
+    "is_native": false,
+    "current_price": 0,
+    "status": "active",
+    "is_visible": true,
+    "swap_enabled": true,
+    "trading_enabled": true,
+    "deposit_enabled": true,
+    "withdrawal_enabled": true,
+    "wrapped_token_of": "TEST",
+    "created_at": "2025-08-01T03:17:46.849Z",
+    "metadata": {
+      "description": "Wrapped Test Token token on RSA Chain",
+      "totalSupply": 0,
+      "circulatingSupply": 0,
+      "bridgeContract": "0xfcd188337ae659d496c463186382c00ce2ec84b0",
+      "originalToken": {
+        "name": "Test Token",
+        "networks": [
+          "ethereum",
+          "polygon",
+          "bsc"
+        ]
+      }
+    }
+  },
+  {
+    "id": "asset_1754018487041",
+    "name": "Wrapped Test Token",
+    "symbol": "rTEST",
+    "realSymbol": "TEST",
+    "decimals": 18,
+    "contract_address": "0xfcd188337ae659d496c463186382c00ce2ec84b0",
+    "network": "rsa",
+    "is_native": false,
+    "current_price": 0,
+    "status": "active",
+    "is_visible": true,
+    "swap_enabled": true,
+    "trading_enabled": true,
+    "deposit_enabled": true,
+    "withdrawal_enabled": true,
+    "wrapped_token_of": "TEST",
+    "created_at": "2025-08-01T03:21:27.041Z",
+    "metadata": {
+      "description": "Wrapped Test Token token on RSA Chain",
+      "totalSupply": 0,
+      "circulatingSupply": 0,
+      "bridgeContract": "0xfcd188337ae659d496c463186382c00ce2ec84b0",
+      "originalToken": {
+        "name": "Test Token",
+        "networks": [
+          "ethereum",
+          "polygon",
+          "bsc"
+        ]
+      }
+    }
+  },
+  {
+    "id": "asset_1754018596470",
+    "name": "Wrapped Test Token",
+    "symbol": "rTEST",
+    "realSymbol": "TEST",
+    "decimals": 18,
+    "contract_address": "0xfcd188337ae659d496c463186382c00ce2ec84b0",
+    "network": "rsa",
+    "is_native": false,
+    "current_price": 0,
+    "status": "active",
+    "is_visible": true,
+    "swap_enabled": true,
+    "trading_enabled": true,
+    "deposit_enabled": true,
+    "withdrawal_enabled": true,
+    "wrapped_token_of": "TEST",
+    "created_at": "2025-08-01T03:23:16.470Z",
+    "metadata": {
+      "description": "Wrapped Test Token token on RSA Chain",
+      "totalSupply": 0,
+      "circulatingSupply": 0,
+      "bridgeContract": "0xfcd188337ae659d496c463186382c00ce2ec84b0",
+      "originalToken": {
+        "name": "Test Token",
+        "networks": [
+          "ethereum",
+          "polygon",
+          "bsc"
+        ]
+      }
+    }
+  },
+  {
+    "id": "asset_1754018746210",
+    "name": "Wrapped Test Token",
+    "symbol": "rTEST",
+    "realSymbol": "TEST",
+    "decimals": 18,
+    "contract_address": "0xfcd188337ae659d496c463186382c00ce2ec84b0",
+    "network": "rsa",
+    "is_native": false,
+    "current_price": 0,
+    "status": "active",
+    "is_visible": true,
+    "swap_enabled": true,
+    "trading_enabled": true,
+    "deposit_enabled": true,
+    "withdrawal_enabled": true,
+    "wrapped_token_of": "TEST",
+    "created_at": "2025-08-01T03:25:46.210Z",
+    "metadata": {
+      "description": "Wrapped Test Token token on RSA Chain",
+      "totalSupply": 0,
+      "circulatingSupply": 0,
+      "bridgeContract": "0xfcd188337ae659d496c463186382c00ce2ec84b0",
+      "originalToken": {
+        "name": "Test Token",
+        "networks": [
+          "ethereum",
+          "polygon",
+          "bsc"
+        ]
+      }
+    }
+  },
+  {
+    "id": "asset_1754018898607",
+    "name": "Wrapped Perfect Token",
+    "symbol": "rPERFECT",
+    "realSymbol": "PERFECT",
+    "decimals": 18,
+    "contract_address": "0x6590f8b314fe19d53c8529d19d35f210508a21b0",
+    "network": "rsa",
+    "is_native": false,
+    "current_price": 0,
+    "status": "active",
+    "is_visible": true,
+    "swap_enabled": true,
+    "trading_enabled": true,
+    "deposit_enabled": true,
+    "withdrawal_enabled": true,
+    "wrapped_token_of": "PERFECT",
+    "created_at": "2025-08-01T03:28:18.607Z",
+    "metadata": {
+      "description": "Wrapped Perfect Token token on RSA Chain",
+      "totalSupply": 0,
+      "circulatingSupply": 0,
+      "bridgeContract": "0x6590f8b314fe19d53c8529d19d35f210508a21b0",
+      "originalToken": {
+        "name": "Perfect Token",
+        "networks": [
+          "ethereum"
+        ]
+      }
+    }
+  },
+  {
+    "id": "asset_1754018941846",
+    "name": "Wrapped Perfect Token",
+    "symbol": "rPERFECT",
+    "realSymbol": "PERFECT",
+    "decimals": 18,
+    "contract_address": "0x6590f8b314fe19d53c8529d19d35f210508a21b0",
+    "network": "rsa",
+    "is_native": false,
+    "current_price": 0,
+    "status": "active",
+    "is_visible": true,
+    "swap_enabled": true,
+    "trading_enabled": true,
+    "deposit_enabled": true,
+    "withdrawal_enabled": true,
+    "wrapped_token_of": "PERFECT",
+    "created_at": "2025-08-01T03:29:01.847Z",
+    "metadata": {
+      "description": "Wrapped Perfect Token token on RSA Chain",
+      "totalSupply": 0,
+      "circulatingSupply": 0,
+      "bridgeContract": "0x6590f8b314fe19d53c8529d19d35f210508a21b0",
+      "originalToken": {
+        "name": "Perfect Token",
+        "networks": [
+          "ethereum"
+        ]
+      }
+    }
+  },
+  {
+    "id": "asset_1754019164386",
+    "name": "Wrapped Test Token",
+    "symbol": "rTEST",
+    "realSymbol": "TEST",
+    "decimals": 18,
+    "contract_address": "0xfcd188337ae659d496c463186382c00ce2ec84b0",
+    "network": "rsa",
+    "is_native": false,
+    "current_price": 0,
+    "status": "active",
+    "is_visible": true,
+    "swap_enabled": true,
+    "trading_enabled": true,
+    "deposit_enabled": true,
+    "withdrawal_enabled": true,
+    "wrapped_token_of": "TEST",
+    "created_at": "2025-08-01T03:32:44.386Z",
+    "metadata": {
+      "description": "Wrapped Test Token token on RSA Chain",
+      "totalSupply": 0,
+      "circulatingSupply": 0,
+      "bridgeContract": "0xfcd188337ae659d496c463186382c00ce2ec84b0",
+      "originalToken": {
+        "name": "Test Token",
+        "networks": [
+          "ethereum",
+          "polygon",
+          "bsc"
+        ]
+      }
+    }
+  },
+  {
+    "id": "asset_1754019311126",
+    "name": "Wrapped Test Token",
+    "symbol": "rTEST",
+    "realSymbol": "TEST",
+    "decimals": 18,
+    "contract_address": "0xfcd188337ae659d496c463186382c00ce2ec84b0",
+    "network": "rsa",
+    "is_native": false,
+    "current_price": 0,
+    "status": "active",
+    "is_visible": true,
+    "swap_enabled": true,
+    "trading_enabled": true,
+    "deposit_enabled": true,
+    "withdrawal_enabled": true,
+    "wrapped_token_of": "TEST",
+    "created_at": "2025-08-01T03:35:11.126Z",
+    "metadata": {
+      "description": "Wrapped Test Token token on RSA Chain",
+      "totalSupply": 0,
+      "circulatingSupply": 0,
+      "bridgeContract": "0xfcd188337ae659d496c463186382c00ce2ec84b0",
+      "originalToken": {
+        "name": "Test Token",
+        "networks": [
+          "ethereum",
+          "polygon",
+          "bsc"
+        ]
+      }
+    }
+  },
+  {
+    "id": "asset_1754019369740",
+    "name": "Wrapped Test Token",
+    "symbol": "rTEST",
+    "realSymbol": "TEST",
+    "decimals": 18,
+    "contract_address": "0xfcd188337ae659d496c463186382c00ce2ec84b0",
+    "network": "rsa",
+    "is_native": false,
+    "current_price": 0,
+    "status": "active",
+    "is_visible": true,
+    "swap_enabled": true,
+    "trading_enabled": true,
+    "deposit_enabled": true,
+    "withdrawal_enabled": true,
+    "wrapped_token_of": "TEST",
+    "created_at": "2025-08-01T03:36:09.740Z",
+    "metadata": {
+      "description": "Wrapped Test Token token on RSA Chain",
+      "totalSupply": 0,
+      "circulatingSupply": 0,
+      "bridgeContract": "0xfcd188337ae659d496c463186382c00ce2ec84b0",
+      "originalToken": {
+        "name": "Test Token",
+        "networks": [
+          "ethereum",
+          "polygon",
+          "bsc"
+        ]
+      }
+    }
+  },
+  {
+    "id": "asset_1754021330998",
+    "name": "Wrapped BNB Chain",
+    "symbol": "rBNB",
+    "realSymbol": "BNB",
+    "decimals": 18,
+    "contract_address": "0x6eeedf02c6c3874197881dac2852ae42c2c5ce83",
+    "network": "rsa",
+    "is_native": false,
+    "current_price": 250,
+    "status": "active",
+    "is_visible": true,
+    "swap_enabled": true,
+    "trading_enabled": true,
+    "deposit_enabled": true,
+    "withdrawal_enabled": true,
+    "wrapped_token_of": "BNB",
+    "created_at": "2025-08-01T04:08:50.999Z",
+    "metadata": {
+      "description": "Wrapped BNB Chain token on RSA Chain",
+      "totalSupply": 0,
+      "circulatingSupply": 0,
+      "bridgeContract": "0x6eeedf02c6c3874197881dac2852ae42c2c5ce83",
+      "originalToken": {
+        "name": "BNB Chain",
+        "networks": [
+          "ethereum",
+          "bsc"
+        ]
+      }
+    }
+  },
+  {
+    "id": "asset_1754021337455",
+    "name": "Wrapped BNB Chain",
+    "symbol": "rBNB",
+    "realSymbol": "BNB",
+    "decimals": 18,
+    "contract_address": "0x6eeedf02c6c3874197881dac2852ae42c2c5ce83",
+    "network": "rsa",
+    "is_native": false,
+    "current_price": 250,
+    "status": "active",
+    "is_visible": true,
+    "swap_enabled": true,
+    "trading_enabled": true,
+    "deposit_enabled": true,
+    "withdrawal_enabled": true,
+    "wrapped_token_of": "BNB",
+    "created_at": "2025-08-01T04:08:57.456Z",
+    "metadata": {
+      "description": "Wrapped BNB Chain token on RSA Chain",
+      "totalSupply": 0,
+      "circulatingSupply": 0,
+      "bridgeContract": "0x6eeedf02c6c3874197881dac2852ae42c2c5ce83",
+      "originalToken": {
+        "name": "BNB Chain",
+        "networks": [
+          "ethereum",
+          "bsc"
+        ]
+      }
+    }
+  },
+  {
+    "id": "asset_1754021470184",
+    "name": "Wrapped Test Integration Token",
+    "symbol": "rINTEG",
+    "realSymbol": "INTEG",
+    "decimals": 18,
+    "contract_address": "0x37865bbf4aacd3a7659be0a3c9977457c4812f0e",
+    "network": "rsa",
+    "is_native": false,
+    "current_price": 5,
+    "status": "active",
+    "is_visible": true,
+    "swap_enabled": true,
+    "trading_enabled": true,
+    "deposit_enabled": true,
+    "withdrawal_enabled": true,
+    "wrapped_token_of": "INTEG",
+    "created_at": "2025-08-01T04:11:10.184Z",
+    "metadata": {
+      "description": "Wrapped Test Integration Token token on RSA Chain",
+      "totalSupply": 0,
+      "circulatingSupply": 0,
+      "bridgeContract": "0x37865bbf4aacd3a7659be0a3c9977457c4812f0e",
+      "originalToken": {
+        "name": "Test Integration Token",
+        "networks": [
+          "ethereum"
+        ]
+      }
+    }
+  },
+  {
+    "id": "asset_1754022536953",
+    "name": "Wrapped QA Test Token",
+    "symbol": "rQATEST",
+    "realSymbol": "QATEST",
+    "decimals": 18,
+    "contract_address": "0x411eb57f968ba3fc7c798467ba7c8ad07f662832",
+    "network": "rsa",
+    "is_native": false,
+    "current_price": 10.5,
+    "status": "active",
+    "is_visible": true,
+    "swap_enabled": true,
+    "trading_enabled": true,
+    "deposit_enabled": true,
+    "withdrawal_enabled": true,
+    "wrapped_token_of": "QATEST",
+    "created_at": "2025-08-01T04:28:56.953Z",
+    "metadata": {
+      "description": "Wrapped QA Test Token token on RSA Chain",
+      "totalSupply": 0,
+      "circulatingSupply": 0,
+      "bridgeContract": "0x411eb57f968ba3fc7c798467ba7c8ad07f662832",
+      "originalToken": {
+        "name": "QA Test Token",
+        "networks": [
+          "ethereum",
+          "bsc"
+        ]
+      }
+    }
+  },
+  {
+    "id": "asset_1754022695952",
+    "name": "Wrapped QA Test Token",
+    "symbol": "rQATEST",
+    "realSymbol": "QATEST",
+    "decimals": 18,
+    "contract_address": "0x411eb57f968ba3fc7c798467ba7c8ad07f662832",
+    "network": "rsa",
+    "is_native": false,
+    "current_price": 10.5,
+    "status": "active",
+    "is_visible": true,
+    "swap_enabled": true,
+    "trading_enabled": true,
+    "deposit_enabled": true,
+    "withdrawal_enabled": true,
+    "wrapped_token_of": "QATEST",
+    "created_at": "2025-08-01T04:31:35.952Z",
+    "metadata": {
+      "description": "Wrapped QA Test Token token on RSA Chain",
+      "totalSupply": 0,
+      "circulatingSupply": 0,
+      "bridgeContract": "0x411eb57f968ba3fc7c798467ba7c8ad07f662832",
+      "originalToken": {
+        "name": "QA Test Token",
+        "networks": [
+          "ethereum",
+          "bsc"
+        ]
+      }
+    }
+  },
+  {
+    "id": "asset_1754022776347",
+    "name": "Wrapped QA Test Token",
+    "symbol": "rQATEST",
+    "realSymbol": "QATEST",
+    "decimals": 18,
+    "contract_address": "0x411eb57f968ba3fc7c798467ba7c8ad07f662832",
+    "network": "rsa",
+    "is_native": false,
+    "current_price": 10.5,
+    "status": "active",
+    "is_visible": true,
+    "swap_enabled": true,
+    "trading_enabled": true,
+    "deposit_enabled": true,
+    "withdrawal_enabled": true,
+    "wrapped_token_of": "QATEST",
+    "created_at": "2025-08-01T04:32:56.347Z",
+    "metadata": {
+      "description": "Wrapped QA Test Token token on RSA Chain",
+      "totalSupply": 0,
+      "circulatingSupply": 0,
+      "bridgeContract": "0x411eb57f968ba3fc7c798467ba7c8ad07f662832",
+      "originalToken": {
+        "name": "QA Test Token",
+        "networks": [
+          "ethereum",
+          "bsc"
+        ]
+      }
+    }
+  },
+  {
+    "id": "asset_1754023174587",
+    "name": "Wrapped QA Test Token",
+    "symbol": "rQATEST",
+    "realSymbol": "QATEST",
+    "decimals": 18,
+    "contract_address": "0x411eb57f968ba3fc7c798467ba7c8ad07f662832",
+    "network": "rsa",
+    "is_native": false,
+    "current_price": 10.5,
+    "status": "active",
+    "is_visible": true,
+    "swap_enabled": true,
+    "trading_enabled": true,
+    "deposit_enabled": true,
+    "withdrawal_enabled": true,
+    "wrapped_token_of": "QATEST",
+    "created_at": "2025-08-01T04:39:34.587Z",
+    "metadata": {
+      "description": "Wrapped QA Test Token token on RSA Chain",
+      "totalSupply": 0,
+      "circulatingSupply": 0,
+      "bridgeContract": "0x411eb57f968ba3fc7c798467ba7c8ad07f662832",
+      "originalToken": {
+        "name": "QA Test Token",
+        "networks": [
+          "ethereum",
+          "bsc"
+        ]
+      }
+    }
+  },
+  {
+    "id": "asset_1754023276076",
+    "name": "Wrapped QA Test Token",
+    "symbol": "rQATEST",
+    "realSymbol": "QATEST",
+    "decimals": 18,
+    "contract_address": "0x411eb57f968ba3fc7c798467ba7c8ad07f662832",
+    "network": "rsa",
+    "is_native": false,
+    "current_price": 10.5,
+    "status": "active",
+    "is_visible": true,
+    "swap_enabled": true,
+    "trading_enabled": true,
+    "deposit_enabled": true,
+    "withdrawal_enabled": true,
+    "wrapped_token_of": "QATEST",
+    "created_at": "2025-08-01T04:41:16.076Z",
+    "metadata": {
+      "description": "Wrapped QA Test Token token on RSA Chain",
+      "totalSupply": 0,
+      "circulatingSupply": 0,
+      "bridgeContract": "0x411eb57f968ba3fc7c798467ba7c8ad07f662832",
+      "originalToken": {
+        "name": "QA Test Token",
+        "networks": [
+          "ethereum",
+          "bsc"
+        ]
+      }
+    }
+  },
+  {
+    "id": "asset_1754023341032",
+    "name": "Wrapped QA Test Token",
+    "symbol": "rQATEST",
+    "realSymbol": "QATEST",
+    "decimals": 18,
+    "contract_address": "0x411eb57f968ba3fc7c798467ba7c8ad07f662832",
+    "network": "rsa",
+    "is_native": false,
+    "current_price": 10.5,
+    "status": "active",
+    "is_visible": true,
+    "swap_enabled": true,
+    "trading_enabled": true,
+    "deposit_enabled": true,
+    "withdrawal_enabled": true,
+    "wrapped_token_of": "QATEST",
+    "created_at": "2025-08-01T04:42:21.032Z",
+    "metadata": {
+      "description": "Wrapped QA Test Token token on RSA Chain",
+      "totalSupply": 0,
+      "circulatingSupply": 0,
+      "bridgeContract": "0x411eb57f968ba3fc7c798467ba7c8ad07f662832",
+      "originalToken": {
+        "name": "QA Test Token",
+        "networks": [
+          "ethereum",
+          "bsc"
+        ]
+      }
+    }
+  },
+  {
+    "id": "asset_1754024034073",
+    "name": "Wrapped Sync Test Token",
+    "symbol": "rSYNCTEST",
+    "realSymbol": "SYNCTEST",
+    "decimals": 18,
+    "contract_address": "0xb4e014207fbe7df37d62403e40ab0b8f479b5568",
+    "network": "rsa",
+    "is_native": false,
+    "current_price": 0,
+    "status": "active",
+    "is_visible": true,
+    "swap_enabled": true,
+    "trading_enabled": true,
+    "deposit_enabled": true,
+    "withdrawal_enabled": true,
+    "wrapped_token_of": "SYNCTEST",
+    "created_at": "2025-08-01T04:53:54.073Z",
+    "metadata": {
+      "description": "Wrapped Sync Test Token token on RSA Chain",
+      "totalSupply": 0,
+      "circulatingSupply": 0,
+      "bridgeContract": "0xb4e014207fbe7df37d62403e40ab0b8f479b5568",
+      "originalToken": {
+        "symbol": "SYNCTEST",
+        "name": "Sync Test Token",
+        "networks": [
+          "ethereum"
+        ]
+      }
+    }
+  },
+  {
+    "id": "asset_1754024178038",
+    "name": "Wrapped Final Test Token",
+    "symbol": "rFINALTEST",
+    "realSymbol": "FINALTEST",
+    "decimals": 18,
+    "contract_address": "0xf34c6dc694f0681a91290035341da9cf904cffcd",
+    "network": "rsa",
+    "is_native": false,
+    "current_price": 0,
+    "status": "active",
+    "is_visible": true,
+    "swap_enabled": true,
+    "trading_enabled": true,
+    "deposit_enabled": true,
+    "withdrawal_enabled": true,
+    "wrapped_token_of": "FINALTEST",
+    "created_at": "2025-08-01T04:56:18.038Z",
+    "metadata": {
+      "description": "Wrapped Final Test Token token on RSA Chain",
+      "totalSupply": 0,
+      "circulatingSupply": 0,
+      "bridgeContract": "0xf34c6dc694f0681a91290035341da9cf904cffcd",
+      "originalToken": {
+        "symbol": "FINALTEST",
+        "name": "Final Test Token",
+        "networks": [
+          "ethereum"
+        ]
+      }
+    }
+  },
+  {
+    "id": "asset_1754024257401",
+    "name": "Wrapped Ultimate Test Token",
+    "symbol": "rULTIMATE",
+    "realSymbol": "ULTIMATE",
+    "decimals": 18,
+    "contract_address": "0xbe8e8ec3b83a5bbaa257ccdc6046387fdd6d0624",
+    "network": "rsa",
+    "is_native": false,
+    "current_price": 0,
+    "status": "active",
+    "is_visible": true,
+    "swap_enabled": true,
+    "trading_enabled": true,
+    "deposit_enabled": true,
+    "withdrawal_enabled": true,
+    "wrapped_token_of": "ULTIMATE",
+    "created_at": "2025-08-01T04:57:37.401Z",
+    "metadata": {
+      "description": "Wrapped Ultimate Test Token token on RSA Chain",
+      "totalSupply": 0,
+      "circulatingSupply": 0,
+      "bridgeContract": "0xbe8e8ec3b83a5bbaa257ccdc6046387fdd6d0624",
+      "originalToken": {
+        "symbol": "ULTIMATE",
+        "name": "Ultimate Test Token",
+        "networks": [
+          "ethereum",
+          "polygon"
+        ]
+      }
+    }
+  },
+  {
+    "id": "asset_1754024587863",
+    "name": "Wrapped Test Asset Token",
+    "symbol": "rTESTASSET",
+    "realSymbol": "TESTASSET",
+    "decimals": 18,
+    "contract_address": "0xeba9666175650a6732851c6fb28d86312ef812fd",
+    "network": "rsa",
+    "is_native": false,
+    "current_price": 0,
+    "status": "active",
+    "is_visible": true,
+    "swap_enabled": true,
+    "trading_enabled": true,
+    "deposit_enabled": true,
+    "withdrawal_enabled": true,
+    "wrapped_token_of": "TESTASSET",
+    "created_at": "2025-08-01T05:03:07.863Z",
+    "metadata": {
+      "description": "Wrapped Test Asset Token token on RSA Chain",
+      "totalSupply": 0,
+      "circulatingSupply": 0,
+      "bridgeContract": "0xeba9666175650a6732851c6fb28d86312ef812fd",
+      "originalToken": {
+        "symbol": "TESTASSET",
+        "name": "Test Asset Token",
+        "networks": [
+          "ethereum",
+          "polygon"
+        ]
+      }
+    }
+  },
+  {
+    "id": "asset_1754024787978",
+    "name": "Wrapped Verification Token",
+    "symbol": "rVERIFICATION",
+    "realSymbol": "VERIFICATION",
+    "decimals": 18,
+    "contract_address": "0x0cdc416e357b6cae36722b786f420d029f1720df",
+    "network": "rsa",
+    "is_native": false,
+    "current_price": 0,
+    "status": "active",
+    "is_visible": true,
+    "swap_enabled": true,
+    "trading_enabled": true,
+    "deposit_enabled": true,
+    "withdrawal_enabled": true,
+    "wrapped_token_of": "VERIFICATION",
+    "created_at": "2025-08-01T05:06:27.978Z",
+    "metadata": {
+      "description": "Wrapped Verification Token token on RSA Chain",
+      "totalSupply": 0,
+      "circulatingSupply": 0,
+      "bridgeContract": "0x0cdc416e357b6cae36722b786f420d029f1720df",
+      "originalToken": {
+        "symbol": "VERIFICATION",
+        "name": "Verification Token",
+        "networks": [
+          "ethereum"
+        ]
+      }
+    }
+  }
+]
