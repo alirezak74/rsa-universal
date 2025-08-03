@@ -499,16 +499,16 @@ export default function ContractsPage() {
                           </span>
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                          <span className="text-sm font-medium text-gray-900">{contract.balance.RSA || 0}</span> RSA
+                          <span className="text-sm font-medium text-gray-900">{contract.balance?.RSA || 0}</span> RSA
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                          <span className="text-sm font-medium text-gray-900">${contract.balance.USDT || 0}</span>
+                          <span className="text-sm font-medium text-gray-900">${contract.balance?.USDT || 0}</span>
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                          <span className="text-sm font-medium text-gray-900">{contract.balance.BTC || 0}</span> BTC
+                          <span className="text-sm font-medium text-gray-900">{contract.balance?.BTC || 0}</span> BTC
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                          <span className="text-sm font-medium text-gray-900">{contract.balance.ETH || 0}</span> ETH
+                                                      <span className="text-sm font-medium text-gray-900">{contract.balance?.ETH || 0}</span> ETH
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
                           <div className="flex flex-wrap gap-1">
