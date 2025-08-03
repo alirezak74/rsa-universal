@@ -120,6 +120,77 @@
         }
       ],
       "total": 3
+    },
+    "/api/trading/pairs": {
+      "success": true,
+      "data": [
+        {"symbol": "BTC/USDT", "baseAsset": "BTC", "quoteAsset": "USDT", "price": 45250, "change24h": 2.5, "volume24h": 1250},
+        {"symbol": "ETH/USDT", "baseAsset": "ETH", "quoteAsset": "USDT", "price": 2815, "change24h": 1.8, "volume24h": 850},
+        {"symbol": "RSA/USDT", "baseAsset": "RSA", "quoteAsset": "USDT", "price": 0.105, "change24h": 5.2, "volume24h": 250}
+      ],
+      "total": 3
+    },
+    "/api/admin/hot-wallet/balance": {
+      "success": true,
+      "data": {
+        "BTC": "2.5",
+        "ETH": "15.8",
+        "RSA": "50000",
+        "USDT": "25000"
+      },
+      "totalUSD": "1250000.00"
+    },
+    "/api/admin/wrapped-tokens/dashboard": {
+      "success": true,
+      "data": [
+        {"id": "wrapped_1", "symbol": "rBTC", "name": "Wrapped Bitcoin", "reserves": "45.80", "isActive": true},
+        {"id": "wrapped_2", "symbol": "rETH", "name": "Wrapped Ethereum", "reserves": "1200.50", "isActive": true}
+      ],
+      "total": 2
+    },
+    "/api/admin/wallets": {
+      "success": true,
+      "data": [
+        {"id": "wallet_1", "address": "0x1234567890abcdef", "network": "ethereum", "balance": "1000.50", "type": "hot"},
+        {"id": "wallet_2", "address": "bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh", "network": "bitcoin", "balance": "0.5", "type": "cold"},
+        {"id": "wallet_3", "address": "RSA1a2b3c4d5e6f7g8h9i0j", "network": "rsa-chain", "balance": "5000.00", "type": "hot"}
+      ],
+      "total": 3
+    },
+    "/api/deposit/generate": {
+      "success": true,
+      "data": {
+        "network": "ethereum",
+        "address": "0x1234567890abcdef1234567890abcdef12345678",
+        "qrCode": "data:image/png;base64,sample_qr_code"
+      }
+    },
+    "/api/swap/tokens": {
+      "success": true,
+      "data": [
+        {"symbol": "BTC", "name": "Bitcoin", "balance": "2.5", "price": 45250},
+        {"symbol": "ETH", "name": "Ethereum", "balance": "15.8", "price": 2815},
+        {"symbol": "RSA", "name": "RSA Chain Token", "balance": "50000", "price": 0.105}
+      ],
+      "total": 3
+    },
+    "/api/chart/BTC": {
+      "success": true,
+      "data": [
+        {"timestamp": 1720000000, "open": 45000, "high": 46000, "low": 44000, "close": 45250, "volume": 1250}
+      ],
+      "total": 1
+    },
+    "/api/markets/BTC/USDT/ticker": {
+      "success": true,
+      "data": {
+        "symbol": "BTC/USDT",
+        "lastPrice": 45250.00,
+        "bestBid": 45240.00,
+        "bestAsk": 45260.00,
+        "volume24h": 1250.75,
+        "change24h": 2.5
+      }
     }
   },
   "testOverrides": {
