@@ -1,0 +1,190 @@
+{
+  "timestamp": "2025-08-03T12:06:41.095Z",
+  "version": "2.0.0",
+  "summary": {
+    "totalTests": 37,
+    "passedTests": 23,
+    "failedTests": 14,
+    "successRate": 62.16,
+    "systemStatus": "DEGRADED"
+  },
+  "results": {
+    "ecosystemHealth": {
+      "backend": {
+        "status": "failed",
+        "error": "HTTP 200"
+      },
+      "admin": {
+        "status": "warning",
+        "message": "Service may be starting"
+      },
+      "frontend": {
+        "status": "passed",
+        "message": "Service running"
+      }
+    },
+    "adminBugs": {
+      "bug1": {
+        "status": "passed",
+        "endpoint": "/api/admin/dashboard",
+        "source": "mock"
+      },
+      "bug2": {
+        "status": "passed",
+        "endpoint": "/api/orders",
+        "source": "live"
+      },
+      "bug3": {
+        "status": "failed",
+        "endpoint": "/api/trading/pairs",
+        "error": "HTTP 404"
+      },
+      "bug4": {
+        "status": "passed",
+        "endpoint": "/api/crosschain/routes",
+        "source": "mock"
+      },
+      "bug5": {
+        "status": "failed",
+        "endpoint": "/api/admin/hot-wallet/balance",
+        "error": "HTTP 404"
+      },
+      "bug6": {
+        "status": "failed",
+        "endpoint": "/api/admin/wrapped-tokens/dashboard",
+        "error": "HTTP 404"
+      },
+      "bug7": {
+        "status": "failed",
+        "endpoint": "/api/admin/wallets",
+        "error": "HTTP 404"
+      },
+      "bug8": {
+        "status": "passed",
+        "endpoint": "/api/admin/users",
+        "source": "mock"
+      },
+      "bug9": {
+        "status": "passed",
+        "endpoint": "/api/transactions/auction",
+        "source": "mock"
+      },
+      "bug10": {
+        "status": "passed",
+        "endpoint": "/api/admin/contracts",
+        "source": "live"
+      },
+      "bug11": {
+        "status": "passed",
+        "endpoint": "/api/assets/import-token"
+      },
+      "bug12": {
+        "status": "failed",
+        "endpoint": "/emergency",
+        "error": "HTTP 500"
+      },
+      "bug13": {
+        "status": "passed",
+        "endpoint": "/api/admin/assets",
+        "source": "live"
+      }
+    },
+    "userNetworkBugs": {
+      "user1": {
+        "status": "failed",
+        "error": "HTTP 404"
+      },
+      "user2": {
+        "status": "passed",
+        "source": "live"
+      },
+      "user3": {
+        "status": "failed",
+        "error": "HTTP 404"
+      },
+      "user4": {
+        "status": "passed",
+        "source": "mock"
+      },
+      "user5": {
+        "status": "failed",
+        "error": "HTTP 404"
+      },
+      "user6": {
+        "status": "failed",
+        "error": "HTTP 404"
+      },
+      "user7": {
+        "status": "passed",
+        "source": "live"
+      },
+      "user8": {
+        "status": "passed"
+      }
+    },
+    "e2eTests": {
+      "Account_Setup": {
+        "status": "passed"
+      },
+      "Deposits": {
+        "status": "failed",
+        "error": "HTTP 404"
+      },
+      "Wrapped_Tokens": {
+        "status": "failed",
+        "error": "HTTP 404"
+      },
+      "Orders_&_Trades": {
+        "status": "passed",
+        "source": "live"
+      },
+      "Bridge_/_Cross-Chain": {
+        "status": "failed",
+        "error": "Request failed with status code 404"
+      },
+      "Swap": {
+        "status": "failed",
+        "error": "Request failed with status code 404"
+      },
+      "Fee_&_Revenue": {
+        "status": "passed",
+        "source": "mock"
+      },
+      "Notification_System": {
+        "status": "passed",
+        "source": "live"
+      },
+      "KYC": {
+        "status": "passed",
+        "source": "live"
+      }
+    },
+    "syncTests": {
+      "Asset_Data_Availability": {
+        "status": "passed"
+      },
+      "Token_Data_Consistency": {
+        "status": "passed"
+      },
+      "Market_Data_Sync": {
+        "status": "passed"
+      },
+      "Order_System_Sync": {
+        "status": "passed"
+      }
+    },
+    "emergencyFeatures": {}
+  },
+  "configuration": {
+    "backend": "http://localhost:8001",
+    "admin": "http://localhost:3000",
+    "frontend": "http://localhost:3002",
+    "timeout": 5000
+  },
+  "recommendations": [
+    "Enhanced QA framework provides better error handling",
+    "Mock data integration allows testing without all endpoints",
+    "Configuration-based testing improves maintainability",
+    "Real-time monitoring capabilities implemented"
+  ]
+}

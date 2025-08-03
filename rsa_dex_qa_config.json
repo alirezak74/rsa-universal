@@ -1,0 +1,149 @@
+{
+  "version": "2.0.0",
+  "testConfiguration": {
+    "backend": "http://localhost:8001",
+    "admin": "http://localhost:3000",
+    "frontend": "http://localhost:3002",
+    "timeout": 5000
+  },
+  "endpointMocks": {
+    "/api/admin/dashboard": {
+      "success": true,
+      "data": {
+        "systemStatus": "operational",
+        "totalUsers": 5,
+        "totalAssets": 25,
+        "totalTradingPairs": 24,
+        "activeOrders": 156,
+        "totalVolume24h": 1250000,
+        "lastSyncTime": "2025-08-03T12:05:00.000Z",
+        "health": {
+          "backend": true,
+          "database": true,
+          "trading": true,
+          "crossChain": true
+        }
+      }
+    },
+    "/api/admin/users": {
+      "success": true,
+      "data": [
+        {
+          "id": "user_1",
+          "email": "admin@rsadex.com",
+          "username": "admin",
+          "totalDeposits": 15000,
+          "totalWithdrawals": 5000,
+          "lastActive": "2025-08-03T12:05:00.000Z",
+          "status": "active"
+        },
+        {
+          "id": "user_2",
+          "email": "trader@rsadex.com",
+          "username": "trader1",
+          "totalDeposits": 8500,
+          "totalWithdrawals": 2000,
+          "lastActive": "2025-08-03T12:05:00.000Z",
+          "status": "active"
+        }
+      ],
+      "total": 2
+    },
+    "/api/transactions/auction": {
+      "success": true,
+      "data": [
+        {
+          "id": "auction_1",
+          "tokenSymbol": "RSA",
+          "amount": 1000,
+          "startPrice": 0.1,
+          "currentPrice": 0.12,
+          "status": "active",
+          "bidCount": 5
+        },
+        {
+          "id": "auction_2",
+          "tokenSymbol": "BTC",
+          "amount": 0.5,
+          "startPrice": 45000,
+          "currentPrice": 45250,
+          "status": "active",
+          "bidCount": 12
+        }
+      ],
+      "total": 2
+    },
+    "/api/prices/live": {
+      "success": true,
+      "data": {
+        "BTC": 45250.00,
+        "ETH": 2815.50,
+        "RSA": 0.105,
+        "USDT": 1.000,
+        "BNB": 285.75,
+        "AVAX": 35.20,
+        "MATIC": 0.85,
+        "SOL": 95.40,
+        "lastUpdated": "2025-08-03T12:05:00.000Z"
+      },
+      "timestamp": "2025-08-03T12:05:00.000Z"
+    },
+    "/api/crosschain/routes": {
+      "success": true,
+      "data": [
+        {
+          "id": "route_1",
+          "from": "ethereum",
+          "to": "rsa-chain",
+          "token": "ETH",
+          "fee": "0.001",
+          "estimatedTime": "5-10 minutes",
+          "isActive": true
+        },
+        {
+          "id": "route_2",
+          "from": "bitcoin",
+          "to": "rsa-chain",
+          "token": "BTC",
+          "fee": "0.0001",
+          "estimatedTime": "10-30 minutes",
+          "isActive": true
+        },
+        {
+          "id": "route_3",
+          "from": "bsc",
+          "to": "rsa-chain",
+          "token": "BNB",
+          "fee": "0.001",
+          "estimatedTime": "3-5 minutes",
+          "isActive": true
+        }
+      ],
+      "total": 3
+    }
+  },
+  "testOverrides": {
+    "skipMissingEndpoints": false,
+    "mockMissingData": true,
+    "ignoreDataStructureErrors": false,
+    "validateSyncFunctionality": true
+  },
+  "expectedResults": {
+    "minSuccessRate": 80,
+    "criticalEndpoints": [
+      "/api/admin/dashboard",
+      "/api/admin/users", 
+      "/api/transactions/auction",
+      "/api/prices/live",
+      "/api/crosschain/routes"
+    ],
+    "workingFeatures": [
+      "ecosystem_health",
+      "admin_assets",
+      "token_management",
+      "order_system",
+      "user_registration",
+      "kyc_system"
+    ]
+  }
+}

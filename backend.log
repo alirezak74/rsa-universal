@@ -13,7 +13,7 @@ Error: listen EADDRINUSE: address already in use :::8001
     at listenInCluster (node:net:1996:12)
     at Server.listen (node:net:2101:7)
     at Function.listen (/workspace/rsa-dex-backend/node_modules/express/lib/application.js:635:24)
-    at Object.<anonymous> (/workspace/rsa-dex-backend/index.js:3148:5)
+    at Object.<anonymous> (/workspace/rsa-dex-backend/index.js:3750:5)
     at Module._compile (node:internal/modules/cjs/loader:1730:14)
     at Object..js (node:internal/modules/cjs/loader:1895:10)
     at Module.load (node:internal/modules/cjs/loader:1465:32)
