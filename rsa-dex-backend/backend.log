@@ -4,4 +4,6 @@
 📊 Health check: http://localhost:8001/health
 🎯 All endpoints properly registered and ready!
 ✅ Asset sync endpoint: http://localhost:8001/api/admin/sync-status/assets
-🔄 Asset sync status requested
+⛽ Gas settings requested
+📋 Admin orders requested - Page: 1, Limit: 5
+🏦 Generating deposit address for RSA on RSA Chain

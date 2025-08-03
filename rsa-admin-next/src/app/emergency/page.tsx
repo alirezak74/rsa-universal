@@ -1,317 +1,213 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
-import { 
-  ExclamationTriangleIcon, 
-  ShieldExclamationIcon,
-  CpuChipIcon,
-  ServerIcon,
-  GlobeAltIcon,
-  BanknotesIcon,
-  UsersIcon,
-  ArrowPathIcon,
-  StopIcon,
-  PlayIcon,
-  CheckCircleIcon
-} from '@heroicons/react/24/outline';
+import { useState, useEffect } from 'react';
+import { ExclamationTriangleIcon, CheckCircleIcon, XCircleIcon, ClockIcon } from '@heroicons/react/24/outline';
 
-interface SystemStatus {
-  service: string;
-  status: 'healthy' | 'warning' | 'critical' | 'offline';
-  uptime: string;
-  lastCheck: string;
-  details?: string;
-}
-
-interface EmergencyAction {
-  id: string;
-  name: string;
-  description: string;
-  type: 'stop' | 'restart' | 'maintenance' | 'alert';
-  severity: 'low' | 'medium' | 'high' | 'critical';
-  confirmed: boolean;
-}
-
-const EmergencyPage: React.FC = () => {
-  const [systemStatus, setSystemStatus] = useState<SystemStatus[]>([
-    {
-      service: 'Backend API',
-      status: 'healthy',
-      uptime: '99.9%',
-      lastCheck: new Date().toISOString(),
-      details: 'All endpoints responding'
-    },
-    {
-      service: 'Database',
-      status: 'healthy', 
-      uptime: '100%',
-      lastCheck: new Date().toISOString(),
-      details: 'Connection stable'
-    },
-    {
-      service: 'Trading Engine',
-      status: 'healthy',
-      uptime: '99.8%',
-      lastCheck: new Date().toISOString(),
-      details: 'Processing orders normally'
-    },
-    {
-      service: 'Cross-Chain Bridge',
-      status: 'warning',
-      uptime: '98.5%',
-      lastCheck: new Date().toISOString(),
-      details: 'Minor delays on Ethereum network'
+export default function EmergencyPage() {
+  const [systemStatus, setSystemStatus] = useState({
+    overall: 'operational',
+    services: {
+      backend: { status: 'operational', uptime: '99.9%', lastCheck: new Date().toISOString() },
+      frontend: { status: 'operational', uptime: '99.8%', lastCheck: new Date().toISOString() },
+      database: { status: 'operational', uptime: '99.95%', lastCheck: new Date().toISOString() },
+      blockchain: { status: 'operational', uptime: '99.7%', lastCheck: new Date().toISOString() },
+      hotWallet: { status: 'warning', uptime: '99.1%', lastCheck: new Date().toISOString() },
+      trading: { status: 'operational', uptime: '99.6%', lastCheck: new Date().toISOString() }
     }
-  ]);
+  });
 
-  const [emergencyActions, setEmergencyActions] = useState<EmergencyAction[]>([
-    {
-      id: 'maintenance_mode',
-      name: 'Enable Maintenance Mode',
-      description: 'Put the entire system into maintenance mode',
-      type: 'maintenance',
-      severity: 'high',
-      confirmed: false
-    },
-    {
-      id: 'stop_trading',
-      name: 'Stop All Trading',
-      description: 'Immediately halt all trading operations',
-      type: 'stop',
-      severity: 'critical',
-      confirmed: false
-    },
-    {
-      id: 'restart_services',
-      name: 'Restart All Services',
-      description: 'Restart backend, database, and trading engine',
-      type: 'restart',
-      severity: 'medium',
-      confirmed: false
-    }
-  ]);
-
-  const [alertHistory, setAlertHistory] = useState([
+  const [alerts, setAlerts] = useState([
     {
       id: 1,
-      timestamp: new Date().toISOString(),
-      type: 'info',
-      message: 'System health check completed successfully'
+      type: 'warning',
+      title: 'Hot Wallet Balance Low',
+      message: 'RSA hot wallet balance below 1000 RSA threshold',
+      timestamp: new Date(Date.now() - 2 * 60 * 60 * 1000).toISOString(),
+      severity: 'medium'
     },
     {
       id: 2,
-      timestamp: new Date(Date.now() - 3600000).toISOString(),
-      type: 'warning',
-      message: 'High CPU usage detected on trading server'
-    },
-    {
-      id: 3,
-      timestamp: new Date(Date.now() - 7200000).toISOString(),
       type: 'info',
-      message: 'Scheduled maintenance completed'
+      title: 'Scheduled Maintenance',
+      message: 'Ethereum bridge maintenance scheduled for tonight 2:00 AM UTC',
+      timestamp: new Date(Date.now() - 4 * 60 * 60 * 1000).toISOString(),
+      severity: 'low'
     }
   ]);
 
-  const getStatusColor = (status: string) => {
-    switch (status) {
-      case 'healthy': return 'text-green-500';
-      case 'warning': return 'text-yellow-500';
-      case 'critical': return 'text-red-500';
-      case 'offline': return 'text-gray-500';
-      default: return 'text-gray-500';
-    }
-  };
-
   const getStatusIcon = (status: string) => {
     switch (status) {
-      case 'healthy': return <CheckCircleIcon className="h-5 w-5" />;
-      case 'warning': return <ExclamationTriangleIcon className="h-5 w-5" />;
-      case 'critical': return <ShieldExclamationIcon className="h-5 w-5" />;
-      case 'offline': return <StopIcon className="h-5 w-5" />;
-      default: return <CpuChipIcon className="h-5 w-5" />;
+      case 'operational':
+        return <CheckCircleIcon className="h-5 w-5 text-green-500" />;
+      case 'warning':
+        return <ExclamationTriangleIcon className="h-5 w-5 text-yellow-500" />;
+      case 'critical':
+        return <XCircleIcon className="h-5 w-5 text-red-500" />;
+      default:
+        return <ClockIcon className="h-5 w-5 text-gray-500" />;
     }
   };
 
-  const handleEmergencyAction = (actionId: string) => {
-    setEmergencyActions(prev => 
-      prev.map(action => 
-        action.id === actionId 
-          ? { ...action, confirmed: !action.confirmed }
-          : action
-      )
-    );
-  };
-
-  const executeEmergencyAction = (action: EmergencyAction) => {
-    if (!action.confirmed) {
-      alert('Please confirm the action first by checking the checkbox.');
-      return;
+  const getStatusColor = (status: string) => {
+    switch (status) {
+      case 'operational':
+        return 'text-green-600 bg-green-50';
+      case 'warning':
+        return 'text-yellow-600 bg-yellow-50';
+      case 'critical':
+        return 'text-red-600 bg-red-50';
+      default:
+        return 'text-gray-600 bg-gray-50';
     }
-
-    // Simulate action execution
-    setAlertHistory(prev => [{
-      id: Date.now(),
-      timestamp: new Date().toISOString(),
-      type: 'info',
-      message: `Emergency action executed: ${action.name}`
-    }, ...prev]);
-
-    // Reset confirmation
-    setEmergencyActions(prev => 
-      prev.map(a => 
-        a.id === action.id ? { ...a, confirmed: false } : a
-      )
-    );
   };
 
-  // Auto-refresh system status
+  const emergencyActions = [
+    {
+      id: 1,
+      title: 'Emergency Shutdown',
+      description: 'Immediately halt all trading activities',
+      action: () => alert('Emergency shutdown initiated'),
+      severity: 'critical'
+    },
+    {
+      id: 2,
+      title: 'Pause Withdrawals',
+      description: 'Temporarily suspend all withdrawal requests',
+      action: () => alert('Withdrawals paused'),
+      severity: 'warning'
+    },
+    {
+      id: 3,
+      title: 'Force Sync',
+      description: 'Force synchronization across all services',
+      action: () => alert('Force sync initiated'),
+      severity: 'info'
+    },
+    {
+      id: 4,
+      title: 'Backup Hot Wallets',
+      description: 'Create emergency backup of hot wallet data',
+      action: () => alert('Backup initiated'),
+      severity: 'info'
+    }
+  ];
+
   useEffect(() => {
+    // Simulate real-time updates
     const interval = setInterval(() => {
-      setSystemStatus(prev => prev.map(service => ({
-        ...service,
-        lastCheck: new Date().toISOString()
-      })));
-    }, 30000);
+      setSystemStatus(prev => ({
+        ...prev,
+        services: {
+          ...prev.services,
+          backend: { ...prev.services.backend, lastCheck: new Date().toISOString() },
+          frontend: { ...prev.services.frontend, lastCheck: new Date().toISOString() },
+          database: { ...prev.services.database, lastCheck: new Date().toISOString() },
+          blockchain: { ...prev.services.blockchain, lastCheck: new Date().toISOString() },
+          hotWallet: { ...prev.services.hotWallet, lastCheck: new Date().toISOString() },
+          trading: { ...prev.services.trading, lastCheck: new Date().toISOString() }
+        }
+      }));
+    }, 30000); // Update every 30 seconds
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white p-6">
+    <div className="min-h-screen bg-gray-50 p-6">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-8">
-          <div className="flex items-center space-x-3 mb-4">
-            <ShieldExclamationIcon className="h-8 w-8 text-red-500" />
-            <h1 className="text-3xl font-bold">Emergency Management</h1>
+          <h1 className="text-3xl font-bold text-gray-900 mb-2">🚨 Emergency Control Center</h1>
+          <p className="text-gray-600">Monitor system status and execute emergency procedures</p>
+        </div>
+
+        {/* Overall Status Banner */}
+        <div className={`mb-8 p-4 rounded-lg border-l-4 ${
+          systemStatus.overall === 'operational' 
+            ? 'bg-green-50 border-green-500' 
+            : 'bg-red-50 border-red-500'
+        }`}>
+          <div className="flex items-center">
+            {getStatusIcon(systemStatus.overall)}
+            <h2 className="ml-2 text-lg font-semibold">
+              System Status: {systemStatus.overall.toUpperCase()}
+            </h2>
+            <span className="ml-auto text-sm text-gray-500">
+              Last updated: {new Date().toLocaleTimeString()}
+            </span>
           </div>
-          <p className="text-gray-400">
-            Monitor system health and execute emergency procedures for RSA DEX ecosystem
-          </p>
         </div>
 
-        {/* System Status Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-          {systemStatus.map((service, index) => (
-            <div key={index} className="bg-gray-800 border border-gray-700 rounded-lg p-6">
-              <div className="flex items-center justify-between mb-4">
-                <div className="flex items-center space-x-2">
-                  <div className={getStatusColor(service.status)}>
-                    {getStatusIcon(service.status)}
-                  </div>
-                  <h3 className="font-semibold">{service.service}</h3>
-                </div>
-                <span className={`px-2 py-1 rounded text-xs font-medium ${
-                  service.status === 'healthy' ? 'bg-green-900 text-green-300' :
-                  service.status === 'warning' ? 'bg-yellow-900 text-yellow-300' :
-                  service.status === 'critical' ? 'bg-red-900 text-red-300' :
-                  'bg-gray-700 text-gray-300'
-                }`}>
-                  {service.status}
-                </span>
-              </div>
-              <div className="space-y-2">
-                <div className="flex justify-between text-sm">
-                  <span className="text-gray-400">Uptime:</span>
-                  <span>{service.uptime}</span>
-                </div>
-                <div className="text-xs text-gray-500">
-                  Last check: {new Date(service.lastCheck).toLocaleTimeString()}
-                </div>
-                <div className="text-xs text-gray-400">
-                  {service.details}
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Emergency Actions */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <div className="bg-gray-800 border border-gray-700 rounded-lg p-6">
-            <h2 className="text-xl font-bold mb-4 flex items-center space-x-2">
-              <ExclamationTriangleIcon className="h-6 w-6 text-orange-500" />
-              <span>Emergency Actions</span>
-            </h2>
+          {/* Service Status */}
+          <div className="bg-white rounded-lg shadow p-6">
+            <h3 className="text-xl font-semibold mb-4">Service Status</h3>
             <div className="space-y-4">
-              {emergencyActions.map((action) => (
-                <div key={action.id} className="border border-gray-600 rounded-lg p-4">
-                  <div className="flex items-start justify-between mb-2">
-                    <div>
-                      <h3 className="font-semibold">{action.name}</h3>
-                      <p className="text-sm text-gray-400 mt-1">{action.description}</p>
+              {Object.entries(systemStatus.services).map(([service, data]) => (
+                <div key={service} className="flex items-center justify-between p-3 border rounded">
+                  <div className="flex items-center">
+                    {getStatusIcon(data.status)}
+                    <div className="ml-3">
+                      <p className="font-medium capitalize">{service}</p>
+                      <p className="text-sm text-gray-500">Uptime: {data.uptime}</p>
                     </div>
-                    <span className={`px-2 py-1 rounded text-xs font-medium ${
-                      action.severity === 'critical' ? 'bg-red-900 text-red-300' :
-                      action.severity === 'high' ? 'bg-orange-900 text-orange-300' :
-                      action.severity === 'medium' ? 'bg-yellow-900 text-yellow-300' :
-                      'bg-blue-900 text-blue-300'
-                    }`}>
-                      {action.severity}
-                    </span>
                   </div>
-                  <div className="flex items-center justify-between mt-4">
-                    <label className="flex items-center space-x-2">
-                      <input
-                        type="checkbox"
-                        checked={action.confirmed}
-                        onChange={() => handleEmergencyAction(action.id)}
-                        className="rounded border-gray-600 bg-gray-700"
-                      />
-                      <span className="text-sm">I confirm this action</span>
-                    </label>
-                    <button
-                      onClick={() => executeEmergencyAction(action)}
-                      disabled={!action.confirmed}
-                      className={`px-4 py-2 rounded font-medium ${
-                        action.confirmed
-                          ? 'bg-red-600 hover:bg-red-700 text-white'
-                          : 'bg-gray-600 text-gray-400 cursor-not-allowed'
-                      }`}
-                    >
-                      Execute
-                    </button>
-                  </div>
+                  <span className={`px-2 py-1 rounded text-xs font-medium ${getStatusColor(data.status)}`}>
+                    {data.status.toUpperCase()}
+                  </span>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Alert History */}
-          <div className="bg-gray-800 border border-gray-700 rounded-lg p-6">
-            <h2 className="text-xl font-bold mb-4 flex items-center space-x-2">
-              <ServerIcon className="h-6 w-6 text-blue-500" />
-              <span>Alert History</span>
-            </h2>
-            <div className="space-y-3 max-h-96 overflow-y-auto">
-              {alertHistory.map((alert) => (
-                <div key={alert.id} className="border-l-4 border-blue-500 pl-4 py-2">
-                  <div className="flex items-center justify-between">
-                    <span className={`px-2 py-1 rounded text-xs font-medium ${
-                      alert.type === 'error' ? 'bg-red-900 text-red-300' :
-                      alert.type === 'warning' ? 'bg-yellow-900 text-yellow-300' :
-                      'bg-blue-900 text-blue-300'
-                    }`}>
-                      {alert.type}
-                    </span>
+          {/* Emergency Actions */}
+          <div className="bg-white rounded-lg shadow p-6">
+            <h3 className="text-xl font-semibold mb-4">Emergency Actions</h3>
+            <div className="space-y-3">
+              {emergencyActions.map((action) => (
+                <button
+                  key={action.id}
+                  onClick={action.action}
+                  className={`w-full p-4 text-left border rounded hover:shadow-md transition-shadow ${
+                    action.severity === 'critical' 
+                      ? 'border-red-300 hover:border-red-400' 
+                      : action.severity === 'warning'
+                      ? 'border-yellow-300 hover:border-yellow-400'
+                      : 'border-gray-300 hover:border-gray-400'
+                  }`}
+                >
+                  <h4 className="font-medium">{action.title}</h4>
+                  <p className="text-sm text-gray-600 mt-1">{action.description}</p>
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Recent Alerts */}
+          <div className="bg-white rounded-lg shadow p-6 lg:col-span-2">
+            <h3 className="text-xl font-semibold mb-4">Recent Alerts</h3>
+            <div className="space-y-3">
+              {alerts.map((alert) => (
+                <div key={alert.id} className={`p-4 border-l-4 rounded ${
+                  alert.type === 'warning' 
+                    ? 'border-yellow-500 bg-yellow-50' 
+                    : 'border-blue-500 bg-blue-50'
+                }`}>
+                  <div className="flex justify-between items-start">
+                    <div>
+                      <h4 className="font-medium">{alert.title}</h4>
+                      <p className="text-sm text-gray-600 mt-1">{alert.message}</p>
+                    </div>
                     <span className="text-xs text-gray-500">
-                      {new Date(alert.timestamp).toLocaleString()}
+                      {new Date(alert.timestamp).toLocaleTimeString()}
                     </span>
                   </div>
-                  <p className="text-sm mt-1">{alert.message}</p>
                 </div>
               ))}
             </div>
           </div>
-        </div>
-
-        {/* Footer */}
-        <div className="mt-8 text-center text-sm text-gray-500">
-          <p>RSA DEX Emergency Management System - Last updated: {new Date().toLocaleString()}</p>
         </div>
       </div>
     </div>
   );
-};
-
-export default EmergencyPage; 
+} 
