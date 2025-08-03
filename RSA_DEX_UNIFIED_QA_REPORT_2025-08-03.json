@@ -1,0 +1,286 @@
+{
+  "timestamp": "2025-08-03T11:40:11.670Z",
+  "totalTests": 42,
+  "passedTests": 0,
+  "failedTests": 36,
+  "warnings": 6,
+  "bugValidation": {},
+  "e2eTests": {
+    "Account Setup": {
+      "status": "FAIL",
+      "details": "Account setup issues detected",
+      "data": null,
+      "timestamp": "2025-08-03T11:41:29.861Z"
+    },
+    "Deposits": {
+      "status": "FAIL",
+      "details": "Only 0/5 networks working",
+      "data": null,
+      "timestamp": "2025-08-03T11:41:44.894Z"
+    },
+    "Wrapped Tokens": {
+      "status": "FAIL",
+      "details": "Wrapped token mapping issues",
+      "data": null,
+      "timestamp": "2025-08-03T11:41:47.900Z"
+    },
+    "Orders & Trades": {
+      "status": "FAIL",
+      "details": "Order creation failed",
+      "data": null,
+      "timestamp": "2025-08-03T11:41:50.906Z"
+    },
+    "Bridge / Cross-Chain": {
+      "status": "FAIL",
+      "details": "Cross-chain functionality not available",
+      "data": null,
+      "timestamp": "2025-08-03T11:41:53.912Z"
+    },
+    "Swap": {
+      "status": "FAIL",
+      "details": "Swap functionality not ready",
+      "data": null,
+      "timestamp": "2025-08-03T11:41:56.919Z"
+    },
+    "Fee & Revenue": {
+      "status": "WARNING",
+      "details": "Fee calculation needs specific implementation",
+      "data": null,
+      "timestamp": "2025-08-03T11:41:56.919Z"
+    },
+    "Notification System": {
+      "status": "FAIL",
+      "details": "Notification system needs implementation",
+      "data": null,
+      "timestamp": "2025-08-03T11:41:59.925Z"
+    },
+    "KYC": {
+      "status": "FAIL",
+      "details": "KYC system needs full implementation",
+      "data": null,
+      "timestamp": "2025-08-03T11:42:02.930Z"
+    }
+  },
+  "syncTests": {
+    "Real-time Asset Sync": {
+      "status": "FAIL",
+      "details": "Asset sync infrastructure issues",
+      "data": null,
+      "timestamp": "2025-08-03T11:42:08.941Z"
+    },
+    "Trading Pair Sync": {
+      "status": "FAIL",
+      "details": "Trading pair sync issues",
+      "data": null,
+      "timestamp": "2025-08-03T11:42:11.948Z"
+    },
+    "Force Sync Mechanism": {
+      "status": "FAIL",
+      "details": "Force sync not available",
+      "data": null,
+      "timestamp": "2025-08-03T11:42:14.955Z"
+    },
+    "Cross-Component Data Bridge": {
+      "status": "FAIL",
+      "details": "Data bridge not available",
+      "data": null,
+      "timestamp": "2025-08-03T11:42:17.961Z"
+    }
+  },
+  "emergencyFeatures": {
+    "Emergency Page Implementation": {
+      "status": "WARNING",
+      "details": "Emergency page missing - needs creation",
+      "data": null,
+      "timestamp": "2025-08-03T11:42:20.968Z"
+    },
+    "System Health Dashboard": {
+      "status": "WARNING",
+      "details": "System health dashboard needs implementation",
+      "data": null,
+      "timestamp": "2025-08-03T11:42:23.973Z"
+    },
+    "Admin Audit Logs": {
+      "status": "WARNING",
+      "details": "Audit logging needs implementation",
+      "data": null,
+      "timestamp": "2025-08-03T11:42:26.979Z"
+    },
+    "Chart Timeframes": {
+      "status": "WARNING",
+      "details": "Chart timeframes need frontend implementation",
+      "data": null,
+      "timestamp": "2025-08-03T11:42:26.979Z"
+    },
+    "API Test Coverage": {
+      "status": "WARNING",
+      "details": "Only 0/7 endpoints working",
+      "data": null,
+      "timestamp": "2025-08-03T11:42:48.026Z"
+    }
+  },
+  "recommendations": [
+    "⚠️ HIGH PRIORITY: More than 50% of tests are failing - immediate attention required",
+    "🚨 CRITICAL: Core services not running - start backend, admin, and frontend services",
+    "🔧 URGENT: Multiple admin bugs require immediate fixes",
+    "🔄 IMPORTANT: Synchronization issues detected - implement real-time sync",
+    "⚡ ENHANCEMENT: Emergency features and missing components need implementation"
+  ],
+  "ecosystemHealth": {
+    "Backend API": {
+      "status": "FAIL",
+      "details": "Service not running on port 8001 - Connection refused",
+      "data": null,
+      "timestamp": "2025-08-03T11:40:14.693Z"
+    },
+    "Admin Panel": {
+      "status": "FAIL",
+      "details": "Service not running on port 3000 - Connection refused",
+      "data": null,
+      "timestamp": "2025-08-03T11:40:17.701Z"
+    },
+    "Frontend DEX": {
+      "status": "FAIL",
+      "details": "Service not running on port 3002 - Connection refused",
+      "data": null,
+      "timestamp": "2025-08-03T11:40:20.709Z"
+    }
+  },
+  "adminBugs": {
+    "Bug 1: Dashboard Load Error": {
+      "status": "FAIL",
+      "details": "Dashboard still has asset sync errors",
+      "data": null,
+      "timestamp": "2025-08-03T11:40:23.715Z"
+    },
+    "Bug 2: Order Page Error": {
+      "status": "FAIL",
+      "details": "Orders API returns 0",
+      "data": null,
+      "timestamp": "2025-08-03T11:40:26.722Z"
+    },
+    "Bug 3: Trading Pair Not Displayed": {
+      "status": "FAIL",
+      "details": "Trading pair creation/sync issues remain",
+      "data": null,
+      "timestamp": "2025-08-03T11:40:29.730Z"
+    },
+    "Bug 4: Cross-Chain Page - No Deposit Addresses": {
+      "status": "FAIL",
+      "details": "Deposit addresses not accessible",
+      "data": null,
+      "timestamp": "2025-08-03T11:40:32.738Z"
+    },
+    "Bug 5: Hot Wallet Page Fails": {
+      "status": "FAIL",
+      "details": "Hot wallet returns 0",
+      "data": null,
+      "timestamp": "2025-08-03T11:40:35.744Z"
+    },
+    "Bug 6: Wrapped Tokens Page Fails": {
+      "status": "FAIL",
+      "details": "Wrapped tokens not accessible",
+      "data": null,
+      "timestamp": "2025-08-03T11:40:38.751Z"
+    },
+    "Bug 7: Wallet Management - Only 1 Wallet Shows": {
+      "status": "FAIL",
+      "details": "Wallets endpoint issues",
+      "data": null,
+      "timestamp": "2025-08-03T11:40:41.758Z"
+    },
+    "Bug 8: User Page Crash (Code 436)": {
+      "status": "FAIL",
+      "details": "Users page returns 0",
+      "data": null,
+      "timestamp": "2025-08-03T11:40:44.764Z"
+    },
+    "Bug 9: Auction Tab - NaN and missing endpoint": {
+      "status": "FAIL",
+      "details": "Auction endpoint missing or broken",
+      "data": null,
+      "timestamp": "2025-08-03T11:40:47.769Z"
+    },
+    "Bug 10: Contracts Page Crash (Line 502)": {
+      "status": "FAIL",
+      "details": "Contracts page still crashes",
+      "data": null,
+      "timestamp": "2025-08-03T11:40:50.776Z"
+    },
+    "Bug 11: Universal Import Sync": {
+      "status": "FAIL",
+      "details": "Universal Import sync issues",
+      "data": null,
+      "timestamp": "2025-08-03T11:40:53.782Z"
+    },
+    "Bug 12: Emergency Page Missing": {
+      "status": "FAIL",
+      "details": "Emergency page needs to be created",
+      "data": null,
+      "timestamp": "2025-08-03T11:40:56.790Z"
+    },
+    "Bug 13: Edit/Delete in Asset Management": {
+      "status": "FAIL",
+      "details": "Asset edit/delete not implemented",
+      "data": null,
+      "timestamp": "2025-08-03T11:40:59.795Z"
+    }
+  },
+  "userNetworkBugs": {
+    "Bug 1: Wallet Not Generating on Network Selection": {
+      "status": "FAIL",
+      "details": "Wallet generation failed",
+      "data": null,
+      "timestamp": "2025-08-03T11:41:02.802Z"
+    },
+    "Bug 2: Deposit Address Not Returning": {
+      "status": "FAIL",
+      "details": "Deposit address generation failed",
+      "data": null,
+      "timestamp": "2025-08-03T11:41:05.808Z"
+    },
+    "Bug 3: Swap Page Only Shows Default Token": {
+      "status": "FAIL",
+      "details": "Limited tokens in swap interface",
+      "data": null,
+      "timestamp": "2025-08-03T11:41:08.814Z"
+    },
+    "Bug 4: Price Feed Outdated": {
+      "status": "FAIL",
+      "details": "Price feeds not updated or missing",
+      "data": null,
+      "timestamp": "2025-08-03T11:41:11.821Z"
+    },
+    "Bug 5: Missing Chart Timeframes": {
+      "status": "FAIL",
+      "details": "Chart data endpoints missing",
+      "data": null,
+      "timestamp": "2025-08-03T11:41:14.827Z"
+    },
+    "Bug 6: Order Price Manual Only": {
+      "status": "FAIL",
+      "details": "Market price data not available",
+      "data": null,
+      "timestamp": "2025-08-03T11:41:17.834Z"
+    },
+    "Bug 7: Buy Crypto (KYC)": {
+      "status": "FAIL",
+      "details": "KYC submission needs implementation",
+      "data": null,
+      "timestamp": "2025-08-03T11:41:20.840Z"
+    },
+    "Bug 8: User Registration": {
+      "status": "FAIL",
+      "details": "User registration issues",
+      "data": null,
+      "timestamp": "2025-08-03T11:41:23.847Z"
+    }
+  },
+  "successRate": "0.00%",
+  "executionSummary": {
+    "overallStatus": "CRITICAL",
+    "criticalIssues": 36,
+    "totalValidations": 42,
+    "systemReadiness": "DEVELOPMENT"
+  }
+}
