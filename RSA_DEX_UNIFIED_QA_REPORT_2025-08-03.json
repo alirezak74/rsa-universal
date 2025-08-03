@@ -1,64 +1,64 @@
 {
-  "timestamp": "2025-08-03T11:40:11.670Z",
+  "timestamp": "2025-08-03T11:59:20.402Z",
   "totalTests": 42,
-  "passedTests": 0,
-  "failedTests": 36,
-  "warnings": 6,
+  "passedTests": 13,
+  "failedTests": 24,
+  "warnings": 5,
   "bugValidation": {},
   "e2eTests": {
     "Account Setup": {
-      "status": "FAIL",
-      "details": "Account setup issues detected",
+      "status": "PASS",
+      "details": "Account setup working for both email and wallet",
       "data": null,
-      "timestamp": "2025-08-03T11:41:29.861Z"
+      "timestamp": "2025-08-03T11:59:20.562Z"
     },
     "Deposits": {
       "status": "FAIL",
       "details": "Only 0/5 networks working",
       "data": null,
-      "timestamp": "2025-08-03T11:41:44.894Z"
+      "timestamp": "2025-08-03T11:59:20.570Z"
     },
     "Wrapped Tokens": {
       "status": "FAIL",
-      "details": "Wrapped token mapping issues",
+      "details": "Test execution failed: response.data.filter is not a function",
       "data": null,
-      "timestamp": "2025-08-03T11:41:47.900Z"
+      "timestamp": "2025-08-03T11:59:20.571Z"
     },
     "Orders & Trades": {
-      "status": "FAIL",
-      "details": "Order creation failed",
+      "status": "PASS",
+      "details": "Order creation working",
       "data": null,
-      "timestamp": "2025-08-03T11:41:50.906Z"
+      "timestamp": "2025-08-03T11:59:20.572Z"
     },
     "Bridge / Cross-Chain": {
       "status": "FAIL",
       "details": "Cross-chain functionality not available",
       "data": null,
-      "timestamp": "2025-08-03T11:41:53.912Z"
+      "timestamp": "2025-08-03T11:59:20.573Z"
     },
     "Swap": {
       "status": "FAIL",
       "details": "Swap functionality not ready",
       "data": null,
-      "timestamp": "2025-08-03T11:41:56.919Z"
+      "timestamp": "2025-08-03T11:59:20.574Z"
     },
     "Fee & Revenue": {
       "status": "WARNING",
       "details": "Fee calculation needs specific implementation",
       "data": null,
-      "timestamp": "2025-08-03T11:41:56.919Z"
+      "timestamp": "2025-08-03T11:59:20.574Z"
     },
     "Notification System": {
       "status": "FAIL",
       "details": "Notification system needs implementation",
       "data": null,
-      "timestamp": "2025-08-03T11:41:59.925Z"
+      "timestamp": "2025-08-03T11:59:20.576Z"
     },
     "KYC": {
-      "status": "FAIL",
-      "details": "KYC system needs full implementation",
+      "status": "PASS",
+      "details": "KYC system accessible",
       "data": null,
-      "timestamp": "2025-08-03T11:42:02.930Z"
+      "timestamp": "2025-08-03T11:59:20.577Z"
     }
   },
   "syncTests": {
@@ -66,25 +66,25 @@
       "status": "FAIL",
       "details": "Asset sync infrastructure issues",
       "data": null,
-      "timestamp": "2025-08-03T11:42:08.941Z"
+      "timestamp": "2025-08-03T11:59:20.579Z"
     },
     "Trading Pair Sync": {
       "status": "FAIL",
       "details": "Trading pair sync issues",
       "data": null,
-      "timestamp": "2025-08-03T11:42:11.948Z"
+      "timestamp": "2025-08-03T11:59:20.581Z"
     },
     "Force Sync Mechanism": {
-      "status": "FAIL",
-      "details": "Force sync not available",
+      "status": "PASS",
+      "details": "Force sync mechanism working",
       "data": null,
-      "timestamp": "2025-08-03T11:42:14.955Z"
+      "timestamp": "2025-08-03T11:59:20.582Z"
     },
     "Cross-Component Data Bridge": {
-      "status": "FAIL",
-      "details": "Data bridge not available",
+      "status": "PASS",
+      "details": "Data bridge operational",
       "data": null,
-      "timestamp": "2025-08-03T11:42:17.961Z"
+      "timestamp": "2025-08-03T11:59:20.582Z"
     }
   },
   "emergencyFeatures": {
@@ -92,58 +92,66 @@
       "status": "WARNING",
       "details": "Emergency page missing - needs creation",
       "data": null,
-      "timestamp": "2025-08-03T11:42:20.968Z"
+      "timestamp": "2025-08-03T11:59:20.593Z"
     },
     "System Health Dashboard": {
       "status": "WARNING",
       "details": "System health dashboard needs implementation",
       "data": null,
-      "timestamp": "2025-08-03T11:42:23.973Z"
+      "timestamp": "2025-08-03T11:59:20.594Z"
     },
     "Admin Audit Logs": {
       "status": "WARNING",
       "details": "Audit logging needs implementation",
       "data": null,
-      "timestamp": "2025-08-03T11:42:26.979Z"
+      "timestamp": "2025-08-03T11:59:20.595Z"
     },
     "Chart Timeframes": {
       "status": "WARNING",
       "details": "Chart timeframes need frontend implementation",
       "data": null,
-      "timestamp": "2025-08-03T11:42:26.979Z"
+      "timestamp": "2025-08-03T11:59:20.595Z"
     },
     "API Test Coverage": {
-      "status": "WARNING",
-      "details": "Only 0/7 endpoints working",
+      "status": "PASS",
+      "details": "6/7 endpoints working",
       "data": null,
-      "timestamp": "2025-08-03T11:42:48.026Z"
+      "timestamp": "2025-08-03T11:59:20.602Z"
     }
   },
   "recommendations": [
     "⚠️ HIGH PRIORITY: More than 50% of tests are failing - immediate attention required",
-    "🚨 CRITICAL: Core services not running - start backend, admin, and frontend services",
     "🔧 URGENT: Multiple admin bugs require immediate fixes",
     "🔄 IMPORTANT: Synchronization issues detected - implement real-time sync",
     "⚡ ENHANCEMENT: Emergency features and missing components need implementation"
   ],
   "ecosystemHealth": {
     "Backend API": {
-      "status": "FAIL",
-      "details": "Service not running on port 8001 - Connection refused",
-      "data": null,
-      "timestamp": "2025-08-03T11:40:14.693Z"
+      "status": "PASS",
+      "details": "Service running on port 8001",
+      "data": {
+        "status": "ok",
+        "timestamp": "2025-08-03T11:59:20.414Z",
+        "version": "1.0.0",
+        "services": {
+          "database": "connected",
+          "alchemy": "active",
+          "crossChain": "operational"
+        }
+      },
+      "timestamp": "2025-08-03T11:59:20.417Z"
     },
     "Admin Panel": {
-      "status": "FAIL",
-      "details": "Service not running on port 3000 - Connection refused",
-      "data": null,
-      "timestamp": "2025-08-03T11:40:17.701Z"
+      "status": "PASS",
+      "details": "Service running on port 3000",
+      "data": "<!DOCTYPE html><html><head><style data-next-hide-fouc=\"true\">body{display:none}</style><noscript data-next-hide-fouc=\"true\"><style>body{display:block}</style></noscript><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width\"/><meta name=\"next-head-count\" content=\"2\"/><noscript data-n-css=\"\"></noscript><script defer=\"\" nomodule=\"\" src=\"/_next/static/chunks/polyfills.js\"></script><script src=\"/_next/static/chunks/fallback/webpack.js\" defer=\"\"></script><script src=\"/_next/static/chunks/fallback/main.js\" defer=\"\"></script><script src=\"/_next/static/chunks/fallback/pages/_app.js\" defer=\"\"></script><script src=\"/_next/static/chunks/fallback/pages/_error.js\" defer=\"\"></script><noscript id=\"__next_css__DO_NOT_USE__\"></noscript></head><body><div id=\"__next\"></div><script src=\"/_next/static/chunks/fallback/react-refresh.js\"></script><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{\"statusCode\":500}},\"page\":\"/_error\",\"query\":{},\"buildId\":\"development\",\"isFallback\":false,\"err\":{\"name\":\"Error\",\"source\":\"server\",\"message\":\"Module not found: Can't resolve '@heroicons/react/24/outline'\\n  2 |\\n  3 | import React, { useState, useEffect } from 'react';\\n\\u003e 4 | import { \\n    | ^\\n  5 |   ExclamationTriangleIcon, \\n  6 |   ShieldExclamationIcon,\\n  7 |   CpuChipIcon,\\n\\nhttps://nextjs.org/docs/messages/module-not-found\\n\",\"stack\":\"Error: Module not found: Can't resolve '@heroicons/react/24/outline'\\n\\u001b[0m \\u001b[90m 2 |\\u001b[39m\\u001b[0m\\n\\u001b[0m \\u001b[90m 3 |\\u001b[39m \\u001b[36mimport\\u001b[39m \\u001b[33mReact\\u001b[39m\\u001b[33m,\\u001b[39m { useState\\u001b[33m,\\u001b[39m useEffect } \\u001b[36mfrom\\u001b[39m \\u001b[32m'react'\\u001b[39m\\u001b[33m;\\u001b[39m\\u001b[0m\\n\\u001b[0m\\u001b[31m\\u001b[1m\\u003e\\u001b[22m\\u001b[39m\\u001b[90m 4 |\\u001b[39m \\u001b[36mimport\\u001b[39m { \\u001b[0m\\n\\u001b[0m \\u001b[90m   |\\u001b[39m \\u001b[31m\\u001b[1m^\\u001b[22m\\u001b[39m\\u001b[0m\\n\\u001b[0m \\u001b[90m 5 |\\u001b[39m   \\u001b[33mExclamationTriangleIcon\\u001b[39m\\u001b[33m,\\u001b[39m \\u001b[0m\\n\\u001b[0m \\u001b[90m 6 |\\u001b[39m   \\u001b[33mShieldExclamationIcon\\u001b[39m\\u001b[33m,\\u001b[39m\\u001b[0m\\n\\u001b[0m \\u001b[90m 7 |\\u001b[39m   \\u001b[33mCpuChipIcon\\u001b[39m\\u001b[33m,\\u001b[39m\\u001b[0m\\n\\nhttps://nextjs.org/docs/messages/module-not-found\\n\\n    at getNotFoundError (/workspace/rsa-admin-next/node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/parseNotFoundError.js:124:16)\\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\\n    at async getModuleBuildError (/workspace/rsa-admin-next/node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/webpackModuleError.js:104:27)\\n    at async /workspace/rsa-admin-next/node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/index.js:29:49\\n    at async Promise.all (index 0)\\n    at async /workspace/rsa-admin-next/node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/index.js:27:21\"},\"gip\":true,\"scriptLoader\":[]}</script></body></html>",
+      "timestamp": "2025-08-03T11:59:20.433Z"
     },
     "Frontend DEX": {
-      "status": "FAIL",
-      "details": "Service not running on port 3002 - Connection refused",
-      "data": null,
-      "timestamp": "2025-08-03T11:40:20.709Z"
+      "status": "PASS",
+      "details": "Service running on port 3002",
+      "data": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/static/css/app/layout.css?v=1754222360441\" data-precedence=\"next_static/css/app/layout.css\"/><link rel=\"preload\" as=\"script\" fetchPriority=\"low\" href=\"/_next/static/chunks/webpack.js?v=1754222360441\"/><script src=\"/_next/static/chunks/main-app.js?v=1754222360441\" async=\"\"></script><script src=\"/_next/static/chunks/app-pages-internals.js\" async=\"\"></script><meta name=\"robots\" content=\"noindex\"/><title>404: This page could not be found.</title><title>RSA DEX - Decentralized Exchange for RSA Chain</title><meta name=\"description\" content=\"Trade RSA CRYPTO and other assets on the RSA Chain decentralized exchange\"/><meta name=\"keywords\" content=\"dex, trading, rsa-chain, cryptocurrency, exchange, rsa crypto\"/><meta name=\"next-size-adjust\"/><script src=\"/_next/static/chunks/polyfills.js\" noModule=\"\"></script></head><body class=\"__className_e8ce0c\"><div class=\"min-h-screen bg-gray-50 dark:bg-gray-900\"><div style=\"font-family:system-ui,&quot;Segoe UI&quot;,Roboto,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;;height:100vh;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center\"><div><style>body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}</style><h1 class=\"next-error-h1\" style=\"display:inline-block;margin:0 20px 0 0;padding:0 23px 0 0;font-size:24px;font-weight:500;vertical-align:top;line-height:49px\">404</h1><div style=\"display:inline-block\"><h2 style=\"font-size:14px;font-weight:400;line-height:49px;margin:0\">This page could not be found.</h2></div></div></div></div><script src=\"/_next/static/chunks/webpack.js?v=1754222360441\" async=\"\"></script><script>(self.__next_f=self.__next_f||[]).push([0]);self.__next_f.push([2,null])</script><script>self.__next_f.push([1,\"1:HL[\\\"/_next/static/media/e4af272ccee01ff0-s.p.woff2\\\",\\\"font\\\",{\\\"crossOrigin\\\":\\\"\\\",\\\"type\\\":\\\"font/woff2\\\"}]\\n2:HL[\\\"/_next/static/css/app/layout.css?v=1754222360441\\\",\\\"style\\\"]\\n0:D{\\\"name\\\":\\\"r2\\\",\\\"env\\\":\\\"Server\\\"}\\n\"])</script><script>self.__next_f.push([1,\"3:I[\\\"(app-pages-browser)/./node_modules/next/dist/client/components/app-router.js\\\",[\\\"app-pages-internals\\\",\\\"static/chunks/app-pages-internals.js\\\"],\\\"\\\"]\\n6:I[\\\"(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js\\\",[\\\"app-pages-internals\\\",\\\"static/chunks/app-pages-internals.js\\\"],\\\"\\\"]\\n7:I[\\\"(app-pages-browser)/./node_modules/next/dist/client/components/render-from-template-context.js\\\",[\\\"app-pages-internals\\\",\\\"static/chunks/app-pages-internals.js\\\"],\\\"\\\"]\\n10:I[\\\"(app-pages-browser)/./node_modules/next/dist/client/components/error-boundary.js\\\",[\\\"app-pages-internals\\\",\\\"static/chunks/app-pages-internals.js\\\"],\\\"\\\"]\\n4:D{\\\"name\\\":\\\"\\\",\\\"env\\\":\\\"Server\\\"}\\n5:D{\\\"name\\\":\\\"NotFound\\\",\\\"env\\\":\\\"Server\\\"}\\n5:[[\\\"$\\\",\\\"title\\\",null,{\\\"children\\\":\\\"404: This page could not be found.\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"fontFamily\\\":\\\"system-ui,\\\\\\\"Segoe UI\\\\\\\",Roboto,Helvetica,Arial,sans-serif,\\\\\\\"Apple Color Emoji\\\\\\\",\\\\\\\"Segoe UI Emoji\\\\\\\"\\\",\\\"height\\\":\\\"100vh\\\",\\\"textAlign\\\":\\\"center\\\",\\\"display\\\":\\\"flex\\\",\\\"flexDirection\\\":\\\"column\\\",\\\"alignItems\\\":\\\"center\\\",\\\"justifyContent\\\":\\\"center\\\"},\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"style\\\",null,{\\\"dangerouslySetInnerHTML\\\":{\\\"__html\\\":\\\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\\\"}}],[\\\"$\\\",\\\"h1\\\",null,{\\\"className\\\":\\\"next-error-h1\\\",\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\",\\\"margin\\\":\\\"0 20px 0 0\\\",\\\"padding\\\":\\\"0 23px 0 0\\\",\\\"fontSize\\\":24,\\\"fontWeight\\\":500,\\\"verticalAlign\\\":\\\"top\\\",\\\"lineHeight\\\":\\\"49px\\\"},\\\"children\\\":\\\"404\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\"},\\\"children\\\":[\\\"$\\\",\\\"h2\\\",null,{\\\"style\\\":{\\\"fontSize\\\":14,\\\"fontWeight\\\":400,\\\"lineHeight\\\":\\\"49px\\\",\\\"margin\\\":0},\\\"children\\\":\\\"This page could not be found.\\\"}]}]]}]}]]\\n8:D{\\\"name\\\":\\\"RootLayout\\\",\\\"env\\\":\\\"Server\\\"}\\n9:D{\\\"name\\\":\\\"NotFound\\\",\\\"env\\\":\\\"Server\\\"}\\na:{\\\"fontFamily\\\":\\\"system-ui,\\\\\\\"Segoe UI\\\\\\\",Roboto,Helvetica,Arial,sans-serif,\\\\\\\"Apple Color Emoji\\\\\\\",\\\\\\\"Segoe UI Emoji\\\\\\\"\\\",\\\"height\\\":\\\"100vh\\\",\\\"textAlign\\\":\\\"center\\\",\\\"display\\\":\\\"flex\\\",\\\"flexDirection\\\":\\\"column\"])</script><script>self.__next_f.push([1,\"\\\",\\\"alignItems\\\":\\\"center\\\",\\\"justifyContent\\\":\\\"center\\\"}\\nb:{\\\"display\\\":\\\"inline-block\\\",\\\"margin\\\":\\\"0 20px 0 0\\\",\\\"padding\\\":\\\"0 23px 0 0\\\",\\\"fontSize\\\":24,\\\"fontWeight\\\":500,\\\"verticalAlign\\\":\\\"top\\\",\\\"lineHeight\\\":\\\"49px\\\"}\\nc:{\\\"display\\\":\\\"inline-block\\\"}\\nd:{\\\"fontSize\\\":14,\\\"fontWeight\\\":400,\\\"lineHeight\\\":\\\"49px\\\",\\\"margin\\\":0}\\n9:[[\\\"$\\\",\\\"title\\\",null,{\\\"children\\\":\\\"404: This page could not be found.\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":\\\"$a\\\",\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"style\\\",null,{\\\"dangerouslySetInnerHTML\\\":{\\\"__html\\\":\\\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\\\"}}],[\\\"$\\\",\\\"h1\\\",null,{\\\"className\\\":\\\"next-error-h1\\\",\\\"style\\\":\\\"$b\\\",\\\"children\\\":\\\"404\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":\\\"$c\\\",\\\"children\\\":[\\\"$\\\",\\\"h2\\\",null,{\\\"style\\\":\\\"$d\\\",\\\"children\\\":\\\"This page could not be found.\\\"}]}]]}]}]]\\n8:[\\\"$\\\",\\\"html\\\",null,{\\\"lang\\\":\\\"en\\\",\\\"children\\\":[\\\"$\\\",\\\"body\\\",null,{\\\"className\\\":\\\"__className_e8ce0c\\\",\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"min-h-screen bg-gray-50 dark:bg-gray-900\\\",\\\"children\\\":[\\\"$\\\",\\\"$L6\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"segmentPath\\\":[\\\"children\\\"],\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L7\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":\\\"$9\\\",\\\"notFoundStyles\\\":[]}]}]}]}]\\ne:D{\\\"name\\\":\\\"rQ\\\",\\\"env\\\":\\\"Server\\\"}\\ne:[\\\"$\\\",\\\"meta\\\",null,{\\\"name\\\":\\\"robots\\\",\\\"content\\\":\\\"noindex\\\"}]\\nf:D{\\\"name\\\":\\\"\\\",\\\"env\\\":\\\"Server\\\"}\\n11:[]\\n0:[\\\"$\\\",\\\"$L3\\\",null,{\\\"buildId\\\":\\\"development\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"api\\\",\\\"health\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"/_not-found\\\",{\\\"children\\\":[\\\"__PAGE__\\\",{}]}]},\\\"$undefined\\\",\\\"$undefined\\\",true],\\\"initialSeedData\\\":[\\\"\\\",{\\\"children\\\":[\\\"/_not-found\\\",{\\\"children\\\":[\\\"__PAGE__\\\",{},[[\\\"$L4\\\",\\\"$5\\\",null],null],null]},[null,[\\\"$\\\",\\\"$L6\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"segmentPath\\\":[\\\"children\\\",\\\"/_not-found\\\",\\\"children\\\"],\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L7\\\",null,{}],\\\"templateSt\"])</script><script>self.__next_f.push([1,\"yles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":\\\"$undefined\\\",\\\"notFoundStyles\\\":\\\"$undefined\\\"}]],null]},[[[[\\\"$\\\",\\\"link\\\",\\\"0\\\",{\\\"rel\\\":\\\"stylesheet\\\",\\\"href\\\":\\\"/_next/static/css/app/layout.css?v=1754222360441\\\",\\\"precedence\\\":\\\"next_static/css/app/layout.css\\\",\\\"crossOrigin\\\":\\\"$undefined\\\"}]],\\\"$8\\\"],null],null],\\\"couldBeIntercepted\\\":false,\\\"initialHead\\\":[\\\"$e\\\",\\\"$Lf\\\"],\\\"globalErrorComponent\\\":\\\"$10\\\",\\\"missingSlots\\\":\\\"$W11\\\"}]\\n\"])</script><script>self.__next_f.push([1,\"f:[[\\\"$\\\",\\\"meta\\\",\\\"0\\\",{\\\"name\\\":\\\"viewport\\\",\\\"content\\\":\\\"width=device-width, initial-scale=1\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"1\\\",{\\\"charSet\\\":\\\"utf-8\\\"}],[\\\"$\\\",\\\"title\\\",\\\"2\\\",{\\\"children\\\":\\\"RSA DEX - Decentralized Exchange for RSA Chain\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"3\\\",{\\\"name\\\":\\\"description\\\",\\\"content\\\":\\\"Trade RSA CRYPTO and other assets on the RSA Chain decentralized exchange\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"4\\\",{\\\"name\\\":\\\"keywords\\\",\\\"content\\\":\\\"dex, trading, rsa-chain, cryptocurrency, exchange, rsa crypto\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"5\\\",{\\\"name\\\":\\\"next-size-adjust\\\"}]]\\n4:null\\n\"])</script></body></html>",
+      "timestamp": "2025-08-03T11:59:20.467Z"
     }
   },
   "adminBugs": {
@@ -151,79 +159,79 @@
       "status": "FAIL",
       "details": "Dashboard still has asset sync errors",
       "data": null,
-      "timestamp": "2025-08-03T11:40:23.715Z"
+      "timestamp": "2025-08-03T11:59:20.475Z"
     },
     "Bug 2: Order Page Error": {
-      "status": "FAIL",
-      "details": "Orders API returns 0",
+      "status": "PASS",
+      "details": "Orders endpoint working",
       "data": null,
-      "timestamp": "2025-08-03T11:40:26.722Z"
+      "timestamp": "2025-08-03T11:59:20.479Z"
     },
     "Bug 3: Trading Pair Not Displayed": {
       "status": "FAIL",
       "details": "Trading pair creation/sync issues remain",
       "data": null,
-      "timestamp": "2025-08-03T11:40:29.730Z"
+      "timestamp": "2025-08-03T11:59:20.484Z"
     },
     "Bug 4: Cross-Chain Page - No Deposit Addresses": {
-      "status": "FAIL",
-      "details": "Deposit addresses not accessible",
+      "status": "PASS",
+      "details": "Deposit addresses API working",
       "data": null,
-      "timestamp": "2025-08-03T11:40:32.738Z"
+      "timestamp": "2025-08-03T11:59:20.487Z"
     },
     "Bug 5: Hot Wallet Page Fails": {
-      "status": "FAIL",
-      "details": "Hot wallet returns 0",
+      "status": "PASS",
+      "details": "Hot wallet API working",
       "data": null,
-      "timestamp": "2025-08-03T11:40:35.744Z"
+      "timestamp": "2025-08-03T11:59:20.488Z"
     },
     "Bug 6: Wrapped Tokens Page Fails": {
       "status": "FAIL",
-      "details": "Wrapped tokens not accessible",
+      "details": "Test execution failed: response.data.some is not a function",
       "data": null,
-      "timestamp": "2025-08-03T11:40:38.751Z"
+      "timestamp": "2025-08-03T11:59:20.494Z"
     },
     "Bug 7: Wallet Management - Only 1 Wallet Shows": {
       "status": "FAIL",
       "details": "Wallets endpoint issues",
       "data": null,
-      "timestamp": "2025-08-03T11:40:41.758Z"
+      "timestamp": "2025-08-03T11:59:20.495Z"
     },
     "Bug 8: User Page Crash (Code 436)": {
       "status": "FAIL",
-      "details": "Users page returns 0",
+      "details": "Users page returns 404",
       "data": null,
-      "timestamp": "2025-08-03T11:40:44.764Z"
+      "timestamp": "2025-08-03T11:59:20.504Z"
     },
     "Bug 9: Auction Tab - NaN and missing endpoint": {
       "status": "FAIL",
       "details": "Auction endpoint missing or broken",
       "data": null,
-      "timestamp": "2025-08-03T11:40:47.769Z"
+      "timestamp": "2025-08-03T11:59:20.511Z"
     },
     "Bug 10: Contracts Page Crash (Line 502)": {
       "status": "FAIL",
       "details": "Contracts page still crashes",
       "data": null,
-      "timestamp": "2025-08-03T11:40:50.776Z"
+      "timestamp": "2025-08-03T11:59:20.515Z"
     },
     "Bug 11: Universal Import Sync": {
       "status": "FAIL",
       "details": "Universal Import sync issues",
       "data": null,
-      "timestamp": "2025-08-03T11:40:53.782Z"
+      "timestamp": "2025-08-03T11:59:20.523Z"
     },
     "Bug 12: Emergency Page Missing": {
       "status": "FAIL",
       "details": "Emergency page needs to be created",
       "data": null,
-      "timestamp": "2025-08-03T11:40:56.790Z"
+      "timestamp": "2025-08-03T11:59:20.543Z"
     },
     "Bug 13: Edit/Delete in Asset Management": {
       "status": "FAIL",
       "details": "Asset edit/delete not implemented",
       "data": null,
-      "timestamp": "2025-08-03T11:40:59.795Z"
+      "timestamp": "2025-08-03T11:59:20.545Z"
     }
   },
   "userNetworkBugs": {
@@ -231,55 +239,55 @@
       "status": "FAIL",
       "details": "Wallet generation failed",
       "data": null,
-      "timestamp": "2025-08-03T11:41:02.802Z"
+      "timestamp": "2025-08-03T11:59:20.551Z"
     },
     "Bug 2: Deposit Address Not Returning": {
       "status": "FAIL",
       "details": "Deposit address generation failed",
       "data": null,
-      "timestamp": "2025-08-03T11:41:05.808Z"
+      "timestamp": "2025-08-03T11:59:20.552Z"
     },
     "Bug 3: Swap Page Only Shows Default Token": {
       "status": "FAIL",
       "details": "Limited tokens in swap interface",
       "data": null,
-      "timestamp": "2025-08-03T11:41:08.814Z"
+      "timestamp": "2025-08-03T11:59:20.554Z"
     },
     "Bug 4: Price Feed Outdated": {
       "status": "FAIL",
       "details": "Price feeds not updated or missing",
       "data": null,
-      "timestamp": "2025-08-03T11:41:11.821Z"
+      "timestamp": "2025-08-03T11:59:20.555Z"
     },
     "Bug 5: Missing Chart Timeframes": {
       "status": "FAIL",
-      "details": "Chart data endpoints missing",
+      "details": "Chart data available, timeframes need frontend implementation",
       "data": null,
-      "timestamp": "2025-08-03T11:41:14.827Z"
+      "timestamp": "2025-08-03T11:59:20.556Z"
     },
     "Bug 6: Order Price Manual Only": {
       "status": "FAIL",
       "details": "Market price data not available",
       "data": null,
-      "timestamp": "2025-08-03T11:41:17.834Z"
+      "timestamp": "2025-08-03T11:59:20.557Z"
     },
     "Bug 7: Buy Crypto (KYC)": {
       "status": "FAIL",
       "details": "KYC submission needs implementation",
       "data": null,
-      "timestamp": "2025-08-03T11:41:20.840Z"
+      "timestamp": "2025-08-03T11:59:20.559Z"
     },
     "Bug 8: User Registration": {
-      "status": "FAIL",
-      "details": "User registration issues",
+      "status": "PASS",
+      "details": "User registration working",
       "data": null,
-      "timestamp": "2025-08-03T11:41:23.847Z"
+      "timestamp": "2025-08-03T11:59:20.560Z"
     }
   },
-  "successRate": "0.00%",
+  "successRate": "30.95%",
   "executionSummary": {
     "overallStatus": "CRITICAL",
-    "criticalIssues": 36,
+    "criticalIssues": 24,
     "totalValidations": 42,
     "systemReadiness": "DEVELOPMENT"
   }
