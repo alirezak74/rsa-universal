@@ -79,19 +79,19 @@ const WalletModal: React.FC<WalletModalProps> = ({ isOpen, onClose, wallet }) =>
             <div className="space-y-2">
               <div className="flex justify-between">
                 <span className="text-sm text-gray-600">RSA:</span>
-                <span className="text-sm font-medium text-gray-900">{wallet.balance.RSA || 0}</span>
+                <span className="text-sm font-medium text-gray-900">{wallet.balance?.RSA || 0}</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-sm text-gray-600">USDT:</span>
-                <span className="text-sm font-medium text-gray-900">${wallet.balance.USDT || 0}</span>
+                <span className="text-sm font-medium text-gray-900">${wallet.balance?.USDT || 0}</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-sm text-gray-600">BTC:</span>
-                <span className="text-sm font-medium text-gray-900">{wallet.balance.BTC || 0}</span>
+                <span className="text-sm font-medium text-gray-900">{wallet.balance?.BTC || 0}</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-sm text-gray-600">ETH:</span>
-                <span className="text-sm font-medium text-gray-900">{wallet.balance.ETH || 0}</span>
+                <span className="text-sm font-medium text-gray-900">{wallet.balance?.ETH || 0}</span>
               </div>
             </div>
           </div>
@@ -452,27 +452,27 @@ export default function WalletsPage() {
                           <span className={`inline-flex px-2 py-1 text-xs font-semibold rounded-full ${
                             wallet.status === 'active' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'
                           }`}>
-                            {wallet.status.charAt(0).toUpperCase() + wallet.status.slice(1)}
+                            {wallet.status?.charAt(0)?.toUpperCase() + (wallet.status?.slice(1) || '')}
                           </span>
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                          {formatAmount(wallet.balance.RSA || 0)} RSA
+                          {formatAmount(wallet.balance?.RSA || 0)} RSA
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                          ${formatAmount(wallet.balance.USDT || 0)}
+                                                      ${formatAmount(wallet.balance?.USDT || 0)}
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                          {formatAmount(wallet.balance.BTC || 0)} BTC
+                                                      {formatAmount(wallet.balance?.BTC || 0)} BTC
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                          {formatAmount(wallet.balance.ETH || 0)} ETH
+                                                      {formatAmount(wallet.balance?.ETH || 0)} ETH
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                          ${formatAmount(
-                            (wallet.balance.RSA || 0) * livePrices.RSA +
-                            (wallet.balance.USDT || 0) * livePrices.USDT +
-                            (wallet.balance.BTC || 0) * livePrices.BTC +
-                            (wallet.balance.ETH || 0) * livePrices.ETH
+                                                      ${formatAmount(
+                              (wallet.balance?.RSA || 0) * livePrices.RSA +
+                              (wallet.balance?.USDT || 0) * livePrices.USDT +
+                              (wallet.balance?.BTC || 0) * livePrices.BTC +
+                              (wallet.balance?.ETH || 0) * livePrices.ETH
                           )}
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">

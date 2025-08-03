@@ -1,0 +1,131 @@
+{
+  "timestamp": "2025-08-03T14:40:08.383Z",
+  "testSuite": "RSA DEX Real Fixes Validation",
+  "backendUrl": "http://localhost:8003",
+  "summary": {
+    "totalTests": 20,
+    "passedTests": 19,
+    "failedTests": 1,
+    "successRate": "95.00%"
+  },
+  "tests": [
+    {
+      "name": "1. Orders Endpoint Returns Real Data",
+      "status": "PASSED",
+      "details": true
+    },
+    {
+      "name": "2. Trading Pairs Management",
+      "status": "PASSED",
+      "details": true
+    },
+    {
+      "name": "3. Cross-Chain Deposit Addresses",
+      "status": "PASSED",
+      "details": true
+    },
+    {
+      "name": "4. Hot Wallet Balance Data",
+      "status": "PASSED",
+      "details": {
+        "RSA": {
+          "amount": 50000,
+          "value": 25000
+        },
+        "USDT": {
+          "amount": 75000,
+          "value": 75000
+        },
+        "BTC": {
+          "amount": 0.5,
+          "value": 22500
+        },
+        "ETH": {
+          "amount": 1,
+          "value": 3250.5
+        }
+      }
+    },
+    {
+      "name": "5. Wrapped Tokens Dashboard",
+      "status": "PASSED",
+      "details": true
+    },
+    {
+      "name": "6. Multiple Wallet Management",
+      "status": "PASSED",
+      "details": true
+    },
+    {
+      "name": "7. KYC Document Endpoint",
+      "status": "PASSED",
+      "details": "123"
+    },
+    {
+      "name": "8. Auction Data (No NaN Values)",
+      "status": "PASSED",
+      "details": true
+    },
+    {
+      "name": "9. Contracts with Safe Balance Access",
+      "status": "PASSED",
+      "details": true
+    },
+    {
+      "name": "10. Backend Health Check",
+      "status": "PASSED",
+      "details": true
+    },
+    {
+      "name": "11. Token Import Functionality",
+      "status": "PASSED",
+      "details": true
+    },
+    {
+      "name": "12. Token Edit Functionality",
+      "status": "PASSED",
+      "details": true
+    },
+    {
+      "name": "13. Token Delete Functionality",
+      "status": "PASSED",
+      "details": true
+    },
+    {
+      "name": "14. Asset Search Functionality",
+      "status": "PASSED",
+      "details": true
+    },
+    {
+      "name": "15. Wallet Generation (RSA Chain)",
+      "status": "PASSED",
+      "details": true
+    },
+    {
+      "name": "16. Deposit Address Generation",
+      "status": "PASSED",
+      "details": true
+    },
+    {
+      "name": "17. Live Price Feeds",
+      "status": "PASSED",
+      "details": true
+    },
+    {
+      "name": "18. Trading Pair Creation",
+      "status": "PASSED",
+      "details": true
+    },
+    {
+      "name": "19. User Registration",
+      "status": "PASSED",
+      "details": true
+    },
+    {
+      "name": "20. KYC Submission Process",
+      "status": "FAILED",
+      "details": "Test returned false"
+    }
+  ],
+  "status": "PARTIAL_FIXES_APPLIED"
+}
